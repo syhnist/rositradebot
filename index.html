@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>RosiTradeBot İndir</title>
-<meta name="description" content="RosiTradeBot 2.4.1: Windows, Linux sunucu, Android uygulaması ve iPhone kurulumu.">
+<meta name="description" content="RosiTradeBot 2.5.0: Windows, Linux sunucu, Android uygulaması ve iPhone kurulumu.">
 <link rel="icon" href="icon-192.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <style>
@@ -52,8 +52,8 @@ footer a { color:inherit; }
 <div class="wrap">
 <header>
   <img src="icon-192.png" alt="">
-  <div><h1>RosiTradeBot <span class="ver">v2.4.1</span></h1>
-  <p class="lead">Binance Futures için otomatik işlem botu ve kontrol paneli · 2026-10-27</p></div>
+  <div><h1>RosiTradeBot <span class="ver">v2.5.0</span></h1>
+  <p class="lead">Binance Futures için otomatik işlem botu ve kontrol paneli · 2026-10-30</p></div>
 </header>
 
 <div class="how"><b>Nasıl çalışır?</b> Bot <b>kendi bilgisayarınızda (Windows)</b> ya da <b>kiraladığınız bir sunucuda (Linux / VPS)</b> çalışır.
@@ -67,7 +67,7 @@ Bu yazılım yatırım tavsiyesi değildir ve kâr garantisi vermez. Önce <b>Bi
   <section class="card" id="windows">
     <h2><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3 5.5 10.5 4.5v7H3zM11.5 4.4 21 3v8.5h-9.5zM3 12.5h7.5v7L3 18.5zM11.5 12.5H21V21l-9.5-1.4z"/></svg>Windows</h2>
     <p class="tag">Bilgisayarınızda çalışan bot + masaüstü uygulaması (Windows 10/11, 64 bit)</p>
-    <a class="btn primary" href="https://github.com/syhnist/rositradebot/releases/download/v2.4.1/RosiTradeBot-Setup-2.4.1.exe" download>Windows kurulumunu indir</a><div class="meta"><span>RosiTradeBot-Setup-2.4.1.exe</span><span>82.0 MB</span></div><details class="sum"><summary>SHA-256</summary><code>4a44926a6b6a5fc7c45905a66d4cdfcb2fe5344b4c1aad8cbe0bb2c38791bff4</code></details>
+    <a class="btn primary" href="https://github.com/syhnist/rositradebot/releases/download/v2.5.0/RosiTradeBot-Setup-2.5.0.exe" download>Windows kurulumunu indir</a><div class="meta"><span>RosiTradeBot-Setup-2.5.0.exe</span><span>82.0 MB</span></div><details class="sum"><summary>SHA-256</summary><code>0d7e2da69240e7e9a7f9172d24b55400c8827b17f811c02dbce97af553f91f36</code></details>
     <ol>
       <li>İndirilen <code>Setup</code> dosyasını çalıştırın.</li>
       <li>“Windows kişisel bilgisayarınızı korudu” uyarısı çıkarsa: <b>Ek bilgi → Yine de çalıştır</b> (uygulama imzasız olduğu için çıkar).</li>
@@ -78,11 +78,11 @@ Bu yazılım yatırım tavsiyesi değildir ve kâr garantisi vermez. Önce <b>Bi
   <section class="card" id="linux">
     <h2><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" d="M4 5h16v10H4zM8 19h8M12 15v4M7 9l2 2-2 2M11 13h3"/></svg>Linux sunucu (VPS)</h2>
     <p class="tag">7/24 çalışması için Ubuntu 22.04/24.04 sunucu (ör. Hostinger)</p>
-    <a class="btn primary" href="https://github.com/syhnist/rositradebot/releases/download/v2.4.1/RosiTradeBot-linux-2.4.1.tar.gz" download>Linux paketini indir</a><div class="meta"><span>RosiTradeBot-linux-2.4.1.tar.gz</span><span>0.9 MB</span></div><details class="sum"><summary>SHA-256</summary><code>9336a6e1c555d2b67b1a77398ae8bc4c52a96b31d8d210cb3e77d0a15567a1cf</code></details>
+    <a class="btn primary" href="https://github.com/syhnist/rositradebot/releases/download/v2.5.0/RosiTradeBot-linux-2.5.0.tar.gz" download>Linux paketini indir</a><div class="meta"><span>RosiTradeBot-linux-2.5.0.tar.gz</span><span>0.9 MB</span></div><details class="sum"><summary>SHA-256</summary><code>06f130c7eba669f80650cf7f0c67277e11d1609c339ad98dcae2e50260f7efe8</code></details>
     <p class="note">Sunucuda tek komutla kurulum:</p>
-    <pre>curl -LO https://github.com/syhnist/rositradebot/releases/download/v2.4.1/RosiTradeBot-linux-2.4.1.tar.gz
-tar xzf RosiTradeBot-linux-2.4.1.tar.gz
-cd RosiTradeBot-linux-2.4.1
+    <pre>curl -LO https://github.com/syhnist/rositradebot/releases/download/v2.5.0/RosiTradeBot-linux-2.5.0.tar.gz
+tar xzf RosiTradeBot-linux-2.5.0.tar.gz
+cd RosiTradeBot-linux-2.5.0
 sudo bash deploy/linux/install.sh</pre>
     <p class="note">Betik alan adını, panel parolasını ve anahtarları sorar; HTTPS otomatik kurulur.</p>
   </section>
@@ -116,7 +116,7 @@ sudo bash deploy/linux/install.sh</pre>
 <p class="note">İndirilen dosyanın değişmediğini kontrol etmek için Windows'ta <code>certutil -hashfile DOSYA SHA256</code>, Linux'ta
 <code>sha256sum DOSYA</code> çıktısını kartlardaki SHA-256 ile karşılaştırın. Tüm dosyalar: <a href="https://github.com/syhnist/rositradebot/releases">GitHub Releases</a>.</p>
 
-<footer>RosiTradeBot v2.4.1 · 2026-10-27 · Bu sayfa yalnızca indirme içindir; bot ve anahtarlarınız sizin cihazınızda çalışır.</footer>
+<footer>RosiTradeBot v2.5.0 · 2026-10-30 · Bu sayfa yalnızca indirme içindir; bot ve anahtarlarınız sizin cihazınızda çalışır.</footer>
 </div>
 </body>
 </html>
