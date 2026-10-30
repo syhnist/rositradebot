@@ -1,24 +1,24 @@
 {
-  "version": "2.5.2",
-  "date": "2026-10-30",
-  "releases": "https://github.com/syhnist/rositradebot/releases/tag/v2.5.2",
+  "version": "2.5.3",
+  "date": "2026-10-31",
+  "releases": "https://github.com/syhnist/rositradebot/releases/tag/v2.5.3",
   "revoked": [],
   "windows": {
-    "version": "2.5.2",
-    "url": "https://github.com/syhnist/rositradebot/releases/download/v2.5.2/RosiTradeBot-Setup-2.5.2.exe",
-    "sha256": "762d422394bd7607a6ccb6969c70d4c69bb2f58e08d7678c8ef9ad4f9fb29a8c",
+    "version": "2.5.3",
+    "url": "https://github.com/syhnist/rositradebot/releases/download/v2.5.3/RosiTradeBot-Setup-2.5.3.exe",
+    "sha256": "d58205660972e9a284c47098b90bc208161c5c5714749e792fbc5321316a77a6",
     "page": "https://syhnist.github.io/rositradebot/#windows"
   },
   "linux": {
-    "version": "2.5.2",
-    "url": "https://github.com/syhnist/rositradebot/releases/download/v2.5.2/RosiTradeBot-linux-2.5.2.tar.gz",
-    "sha256": "bd59af6e4a090ef797c24bcfa9acb659605dfaa5d3bb51900d3f60b2856b97af",
+    "version": "2.5.3",
+    "url": "https://github.com/syhnist/rositradebot/releases/download/v2.5.3/RosiTradeBot-linux-2.5.3.tar.gz",
+    "sha256": "7c2efc9d664c510c2a22852a59e25ca1efbe0490560f4c4ef7435f418f7de107",
     "page": "https://syhnist.github.io/rositradebot/#linux"
   },
   "android": {
-    "version": "2.5.1",
-    "url": "https://github.com/syhnist/rositradebot/releases/download/v2.5.1/RosiTradeBot-android-2.5.1.apk",
-    "sha256": "1cd1de92f8b72f398d9715f92b1acc8886d57e345cb4f0d8a20b2d6371d3203d",
+    "version": "2.5.3",
+    "url": "https://github.com/syhnist/rositradebot/releases/download/v2.5.3/RosiTradeBot-android-2.5.3.apk",
+    "sha256": "3aaa2d55ac6ee89409d36279e23b0838db624429956d3b6e8e0fc8c6e780b45b",
     "page": "https://syhnist.github.io/rositradebot/#android"
   }
 }
