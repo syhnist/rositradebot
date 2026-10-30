@@ -1,9 +1,66 @@
 {
-  "version": "2.5.4",
+  "version": "2.6.0",
   "date": "2026-10-31",
-  "releases": "https://github.com/syhnist/rositradebot/releases/tag/v2.5.4",
+  "releases": "https://github.com/syhnist/rositradebot/releases/tag/v2.6.0",
   "revoked": [],
   "notes": [
+    {
+      "version": "2.6.0",
+      "date": "2026-10-31",
+      "title": "Hareket Radarı, komisyonu karşılayan SL, yeni widget'lar",
+      "title_en": "Move Radar, fee-covering SL, new widgets",
+      "items": [
+        {
+          "title": "Hareket Radarı",
+          "text": "Risk & Strateji'de ayrı bir sekme: tüm coinleri saatte bir tarar, büyük hareket adaylarını ve gerçekleşen hareketleri nedenleriyle kaydeder, her adayı 72 saat sonra puanlar. Mevcut stratejiye dokunmaz ve işlem açmaz.",
+          "title_en": "Move Radar",
+          "text_en": "A separate tab in Risk & Strategy: scans all coins hourly, records big-move candidates and actual moves with their causes, and scores each candidate after 72 hours. It leaves your strategy alone and opens no trades.",
+          "admin": true
+        },
+        {
+          "title": "SL komisyonu da karşılıyor",
+          "text": "1. kademede SL artık tam girişe değil, komisyonu çıkaracak noktaya gider; stop olan işlem zararla kapanmaz. Testlerde toplam getiriyi belirgin değiştirmedi. Açık pozisyonlar da güncellemeden sonra bu kurala geçer.",
+          "title_en": "SL now covers fees",
+          "text_en": "At stage 1 the SL now goes to the point that covers fees instead of the exact entry, so a stopped trade doesn't close at a loss. It didn't noticeably change total return in tests. Open positions move to this rule after the update too.",
+          "admin": true
+        },
+        {
+          "title": "Erken kâr kilidi seçeneği",
+          "text": "İsteyen stopu daha erken kâra alabilir. Testte sonucu kötüleştirdiği için varsayılan kapalıdır.",
+          "title_en": "Early profit lock option",
+          "text_en": "You can move the stop into profit earlier if you want. It's off by default because it hurt results in testing.",
+          "admin": true
+        },
+        {
+          "title": "Backtest: bu sonuç şans mı?",
+          "text": "Backtest sonucunda aynı işlemlerle binlerce rastgele senaryo hesaplanır: zarar etme olasılığı, kötü senaryo getirisi ve düşüşü görünür.",
+          "title_en": "Backtest: is this result luck?",
+          "text_en": "Backtest results now run thousands of random scenarios from the same trades: you see the chance of a loss and the bad-case return and drawdown.",
+          "admin": false
+        },
+        {
+          "title": "Yeni widget tasarımı",
+          "text": "Widget'lar yenilendi. Kazara dokunmada uygulama açılmaz; yalnızca ok düğmesi açar, yenile düğmesi büyüdü.",
+          "title_en": "New widget design",
+          "text_en": "Widgets are redesigned. Accidental taps no longer open the app; only the arrow button does, and the refresh button is bigger.",
+          "admin": false
+        },
+        {
+          "title": "Pozisyona hızlı müdahale",
+          "text": "Azalt ve Kapat düğmeleri pozisyon sayfasına da geldi; telefonda Pozisyonlar artık sağa kaydırmadan kart olarak açılır.",
+          "title_en": "Quick position actions",
+          "text_en": "Reduce and Close buttons are now on the position page too; on phones, Positions opens as cards with no sideways scrolling.",
+          "admin": false
+        },
+        {
+          "title": "Daha hızlı açılış",
+          "text": "Sayfalar ihtiyaç anında yüklenir; panel telefonda daha hızlı açılır.",
+          "title_en": "Faster loading",
+          "text_en": "Pages load on demand, so the panel opens faster on phones.",
+          "admin": false
+        }
+      ]
+    },
     {
       "version": "2.5.4",
       "date": "2026-10-31",
@@ -169,60 +226,24 @@
           "admin": false
         }
       ]
-    },
-    {
-      "version": "2.4.1",
-      "date": "2026-10-28",
-      "title": "Sade abonelik, düzenli menü",
-      "title_en": "Simpler subscription, tidier menu",
-      "items": [
-        {
-          "title": "Abonelik herkes için sade",
-          "text": "Abonelik sayfasında herkes planları görüp satın alma isteği oluşturabilir. Lisans ayrıntıları, cihaz kodu ve lisans etkinleştirme yalnızca yöneticidedir.",
-          "title_en": "Subscription made simple for everyone",
-          "text_en": "On the Subscription page everyone can see the plans and create a purchase request. License details, the device code and license activation are admin-only.",
-          "admin": false
-        },
-        {
-          "title": "Düzenli menü",
-          "text": "Sol menü yeniden düzenlendi: Strateji başlığında Risk & Strateji, Backtest, Kanıt Merkezi ve Öğrenme; Telegram Yönetim'de, İremsu Ayarlar ve yardım'da.",
-          "title_en": "Tidier menu",
-          "text_en": "The left menu was reorganized: Risk & Strategy, Backtest, Evidence Center and Learning under Strategy; Telegram under Management, İremsu under Settings & help.",
-          "admin": false
-        },
-        {
-          "title": "Telegram düğmeleri katlanır",
-          "text": "Telegram'daki düğmeler bir işlemden sonra kendiliğinden katlanır, sohbet alanı küçülmez; mesaj kutusunun yanındaki ⌨️ simgesiyle açılır. 🙈 Düğmeleri gizle tamamen kaldırır, /menu geri getirir.",
-          "title_en": "Telegram buttons fold away",
-          "text_en": "Telegram buttons fold away after each action so the chat area stays large; open them with the ⌨️ icon next to the message box. 🙈 Hide buttons removes them completely, /menu brings them back.",
-          "admin": false
-        },
-        {
-          "title": "Güvenlik ayrıntıları yöneticiye özel",
-          "text": "Sürüm notlarındaki güvenlik ayrıntıları artık yalnızca yöneticiye gösteriliyor; diğer kullanıcılar genel özeti görür.",
-          "title_en": "Security details for admins only",
-          "text_en": "Security details in the release notes are now shown to admins only; other users see a general summary.",
-          "admin": true
-        }
-      ]
     }
   ],
   "windows": {
-    "version": "2.5.4",
-    "url": "https://github.com/syhnist/rositradebot/releases/download/v2.5.4/RosiTradeBot-Setup-2.5.4.exe",
-    "sha256": "dcea5012f47ee586a56d5c626f386ad6bbcd496f3fa8da626cc91e5e7306838d",
+    "version": "2.6.0",
+    "url": "https://github.com/syhnist/rositradebot/releases/download/v2.6.0/RosiTradeBot-Setup-2.6.0.exe",
+    "sha256": "99fd1de61c5c7d773083bb6c61504239e87e3486281402c2f863ad3fafa21346",
     "page": "https://syhnist.github.io/rositradebot/#windows"
   },
   "linux": {
-    "version": "2.5.4",
-    "url": "https://github.com/syhnist/rositradebot/releases/download/v2.5.4/RosiTradeBot-linux-2.5.4.tar.gz",
-    "sha256": "453c096ffaa4ba690d1c06448ecb88954b814350231663070776830ae4bcfca2",
+    "version": "2.6.0",
+    "url": "https://github.com/syhnist/rositradebot/releases/download/v2.6.0/RosiTradeBot-linux-2.6.0.tar.gz",
+    "sha256": "90694caa5a0d1f15ae8e497b58ca4d482e376b91aacf421645c0a9e43357e3f4",
     "page": "https://syhnist.github.io/rositradebot/#linux"
   },
   "android": {
-    "version": "2.5.4",
-    "url": "https://github.com/syhnist/rositradebot/releases/download/v2.5.4/RosiTradeBot-android-2.5.4.apk",
-    "sha256": "c18d9e3a4d3e7ea1c5b773a116d631fb0a5b747622942136dc05d3f24b6e2ecb",
+    "version": "2.6.0",
+    "url": "https://github.com/syhnist/rositradebot/releases/download/v2.6.0/RosiTradeBot-android-2.6.0.apk",
+    "sha256": "f2cd4ff8abc7a3de0594a69211447bc6c005c0c0584aaa466b42e7ee3cbcc792",
     "page": "https://syhnist.github.io/rositradebot/#android"
   }
 }
