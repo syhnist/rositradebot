@@ -1,9 +1,24 @@
 {
-  "version": "2.7.0",
+  "version": "2.7.1",
   "date": "2026-10-31",
-  "releases": "https://github.com/syhnist/rositradebot/releases/tag/v2.7.0",
+  "releases": "https://github.com/syhnist/rositradebot/releases/tag/v2.7.1",
   "revoked": [],
   "notes": [
+    {
+      "version": "2.7.1",
+      "date": "2026-10-31",
+      "title": "Telefonda düzenli üst çubuk",
+      "title_en": "Tidy top bar on phones",
+      "items": [
+        {
+          "title": "Üst üste binen yazılar",
+          "text": "Güncelleme etiketi telefonda üst çubuktaki düğmelerin üstüne biniyordu; artık altında ayrı şeritte duruyor. Maskot büyüdü ve ortaya geçti.",
+          "title_en": "Overlapping labels",
+          "text_en": "The update label overlapped the top bar buttons on phones; it now sits on its own strip below. The mascot is bigger and centered.",
+          "admin": false
+        }
+      ]
+    },
     {
       "version": "2.7.0",
       "date": "2026-10-31",
@@ -232,40 +247,18 @@
           "admin": false
         }
       ]
-    },
-    {
-      "version": "2.5.2",
-      "date": "2026-10-30",
-      "title": "BTC filtresi yeniden sizin seçiminiz",
-      "title_en": "The BTC filter is your choice again",
-      "items": [
-        {
-          "title": "BTC filtresi aç/kapa",
-          "text": "BTC filtresi ve trend gücü filtresi Risk & Strateji'den açılıp kapatılabilir. Kapatırken bot uyarır ve onay ister. Hazır paket uygulamak filtreleri yeniden açar.",
-          "title_en": "BTC filter on/off",
-          "text_en": "The BTC filter and trend strength filter can be turned on or off in Risk & Strategy. The bot warns and asks for confirmation when you turn them off. Applying a package turns the filters back on.",
-          "admin": true
-        },
-        {
-          "title": "Backtest'te filtre karşılaştırması",
-          "text": "Backtest karşılaştırmasına “Trend gücü filtresi kapalı” senaryosu eklendi. Filtreler kapanınca işlem sayısının ve sonucun nasıl değiştiğini yan yana görürsünüz.",
-          "title_en": "Filter comparison in backtest",
-          "text_en": "Backtest comparison now includes a “Trend strength filter off” scenario. You can see side by side how trade count and results change with the filters off.",
-          "admin": false
-        }
-      ]
     }
   ],
   "windows": {
-    "version": "2.7.0",
-    "url": "https://github.com/syhnist/rositradebot/releases/download/v2.7.0/RosiTradeBot-Setup-2.7.0.exe",
-    "sha256": "d4b8a56daaeca7123f5ebf61c041ddc078f52af63df3d16eaf45f1c4fc77dd6f",
+    "version": "2.7.1",
+    "url": "https://github.com/syhnist/rositradebot/releases/download/v2.7.1/RosiTradeBot-Setup-2.7.1.exe",
+    "sha256": "89e13878c9cf832fa1257e8c8aed4e7db174e91a952eb4c499305dfb8e9bc847",
     "page": "https://syhnist.github.io/rositradebot/#windows"
   },
   "linux": {
-    "version": "2.7.0",
-    "url": "https://github.com/syhnist/rositradebot/releases/download/v2.7.0/RosiTradeBot-linux-2.7.0.tar.gz",
-    "sha256": "d3a6685a05b641b38b4742169ee9821e33d4064194f360e97ed7b72300d7477e",
+    "version": "2.7.1",
+    "url": "https://github.com/syhnist/rositradebot/releases/download/v2.7.1/RosiTradeBot-linux-2.7.1.tar.gz",
+    "sha256": "067a1f11414e63806e6cd9a2ecf9e04a5ab7e5bbee3d5dd448474a74c6cb418e",
     "page": "https://syhnist.github.io/rositradebot/#linux"
   },
   "android": {
