@@ -1,9 +1,31 @@
 {
-  "version": "2.7.3",
+  "version": "2.7.4",
   "date": "2026-10-31",
-  "releases": "https://github.com/syhnist/rositradebot/releases/tag/v2.7.3",
+  "releases": "https://github.com/syhnist/rositradebot/releases/tag/v2.7.4",
   "revoked": [],
   "notes": [
+    {
+      "version": "2.7.4",
+      "date": "2026-10-31",
+      "title": "Maskot artık konuşur gibi",
+      "title_en": "The mascot almost talks now",
+      "items": [
+        {
+          "title": "Yeni maskot sesleri",
+          "text": "Bip sesleri yerine konuşmaya benzeyen heceler geldi: mırıldanıyor, huzursuzlanıyor, şaşırıyor, kıkırdıyor, iç çekiyor, horluyor. Sesler her seferinde biraz farklı. Ayarlar'daki Dinle düğmesi sırayla çalar.",
+          "title_en": "New mascot sounds",
+          "text_en": "Beeps are replaced with speech-like syllables: it murmurs, frets, gasps, giggles, sighs and snores. Sounds differ a little every time. The Listen button in Settings plays them in turn.",
+          "admin": false
+        },
+        {
+          "title": "Yanlış motor uyarısı",
+          "text": "Motor sağlıklıyken ara sıra çıkan \"heartbeat göndermiyor\" uyarısı düzeltildi.",
+          "title_en": "False engine warning",
+          "text_en": "Fixed the occasional \"no heartbeat\" warning shown while the engine was healthy.",
+          "admin": true
+        }
+      ]
+    },
     {
       "version": "2.7.3",
       "date": "2026-10-31",
@@ -155,75 +177,18 @@
           "admin": false
         }
       ]
-    },
-    {
-      "version": "2.6.0",
-      "date": "2026-10-31",
-      "title": "Hareket Radarı, komisyonu karşılayan SL, yeni widget'lar",
-      "title_en": "Move Radar, fee-covering SL, new widgets",
-      "items": [
-        {
-          "title": "Hareket Radarı",
-          "text": "Risk & Strateji'de ayrı bir sekme: tüm coinleri saatte bir tarar, büyük hareket adaylarını ve gerçekleşen hareketleri nedenleriyle kaydeder, her adayı 72 saat sonra puanlar. Mevcut stratejiye dokunmaz ve işlem açmaz.",
-          "title_en": "Move Radar",
-          "text_en": "A separate tab in Risk & Strategy: scans all coins hourly, records big-move candidates and actual moves with their causes, and scores each candidate after 72 hours. It leaves your strategy alone and opens no trades.",
-          "admin": true
-        },
-        {
-          "title": "SL komisyonu da karşılıyor",
-          "text": "1. kademede SL artık tam girişe değil, komisyonu çıkaracak noktaya gider; stop olan işlem zararla kapanmaz. Testlerde toplam getiriyi belirgin değiştirmedi. Açık pozisyonlar da güncellemeden sonra bu kurala geçer.",
-          "title_en": "SL now covers fees",
-          "text_en": "At stage 1 the SL now goes to the point that covers fees instead of the exact entry, so a stopped trade doesn't close at a loss. It didn't noticeably change total return in tests. Open positions move to this rule after the update too.",
-          "admin": true
-        },
-        {
-          "title": "Erken kâr kilidi seçeneği",
-          "text": "İsteyen stopu daha erken kâra alabilir. Testte sonucu kötüleştirdiği için varsayılan kapalıdır.",
-          "title_en": "Early profit lock option",
-          "text_en": "You can move the stop into profit earlier if you want. It's off by default because it hurt results in testing.",
-          "admin": true
-        },
-        {
-          "title": "Backtest: bu sonuç şans mı?",
-          "text": "Backtest sonucunda aynı işlemlerle binlerce rastgele senaryo hesaplanır: zarar etme olasılığı, kötü senaryo getirisi ve düşüşü görünür.",
-          "title_en": "Backtest: is this result luck?",
-          "text_en": "Backtest results now run thousands of random scenarios from the same trades: you see the chance of a loss and the bad-case return and drawdown.",
-          "admin": false
-        },
-        {
-          "title": "Yeni widget tasarımı",
-          "text": "Widget'lar yenilendi. Kazara dokunmada uygulama açılmaz; yalnızca ok düğmesi açar, yenile düğmesi büyüdü.",
-          "title_en": "New widget design",
-          "text_en": "Widgets are redesigned. Accidental taps no longer open the app; only the arrow button does, and the refresh button is bigger.",
-          "admin": false
-        },
-        {
-          "title": "Pozisyona hızlı müdahale",
-          "text": "Azalt ve Kapat düğmeleri pozisyon sayfasına da geldi; telefonda Pozisyonlar artık sağa kaydırmadan kart olarak açılır.",
-          "title_en": "Quick position actions",
-          "text_en": "Reduce and Close buttons are now on the position page too; on phones, Positions opens as cards with no sideways scrolling.",
-          "admin": false
-        },
-        {
-          "title": "Daha hızlı açılış",
-          "text": "Sayfalar ihtiyaç anında yüklenir; panel telefonda daha hızlı açılır.",
-          "title_en": "Faster loading",
-          "text_en": "Pages load on demand, so the panel opens faster on phones.",
-          "admin": false
-        }
-      ]
     }
   ],
   "windows": {
-    "version": "2.7.3",
-    "url": "https://github.com/syhnist/rositradebot/releases/download/v2.7.3/RosiTradeBot-Setup-2.7.3.exe",
-    "sha256": "60e27a242e9758c0573dc1620dd74a60dbdbce0fc2038c6a66861ba3de8140cc",
+    "version": "2.7.4",
+    "url": "https://github.com/syhnist/rositradebot/releases/download/v2.7.4/RosiTradeBot-Setup-2.7.4.exe",
+    "sha256": "40f657f39d13d109ddfe3b1f2a61066424a493165a6517d5cef754345c1a962b",
     "page": "https://syhnist.github.io/rositradebot/#windows"
   },
   "linux": {
-    "version": "2.7.3",
-    "url": "https://github.com/syhnist/rositradebot/releases/download/v2.7.3/RosiTradeBot-linux-2.7.3.tar.gz",
-    "sha256": "b6a121fcc716add82c13de88dda0badcb483dfa3c6cda4763106d5a186493999",
+    "version": "2.7.4",
+    "url": "https://github.com/syhnist/rositradebot/releases/download/v2.7.4/RosiTradeBot-linux-2.7.4.tar.gz",
+    "sha256": "113153a46bf416bd43f0bb0789f186db7866913fd2ad78062e38634e1ddece34",
     "page": "https://syhnist.github.io/rositradebot/#linux"
   },
   "android": {
