@@ -1,9 +1,31 @@
 {
-  "version": "2.7.1",
+  "version": "2.7.2",
   "date": "2026-10-31",
-  "releases": "https://github.com/syhnist/rositradebot/releases/tag/v2.7.1",
+  "releases": "https://github.com/syhnist/rositradebot/releases/tag/v2.7.2",
   "revoked": [],
   "notes": [
+    {
+      "version": "2.7.2",
+      "date": "2026-10-31",
+      "title": "Maskot konuşuyor",
+      "title_en": "The mascot talks",
+      "items": [
+        {
+          "title": "Maskot sesi",
+          "text": "Robot artık kısa cıvıltılarla tepki veriyor: dokununca, kârda, zararda ve sinirlenince. Tarayıcı ilk dokunuştan önce ses çalmaz. Ayarlar → Ses ve bildirimler'den açılıp kapatılır, seviyesi ayarlanır.",
+          "title_en": "Mascot sound",
+          "text_en": "The robot now reacts with short chirps: on tap, on profit, on loss and when angry. Browsers play no sound before your first tap. Turn it on or off and set the volume in Settings → Sound and notifications.",
+          "admin": false
+        },
+        {
+          "title": "Sunucu dışı yedek düğmesi",
+          "text": "Telegram bağlı olduğu hâlde Şimdi gönder düğmesi kapalı kalabiliyordu; düzeltildi.",
+          "title_en": "Off-site backup button",
+          "text_en": "The Send now button could stay disabled even with Telegram connected; fixed.",
+          "admin": true
+        }
+      ]
+    },
     {
       "version": "2.7.1",
       "date": "2026-10-31",
@@ -225,40 +247,18 @@
           "admin": false
         }
       ]
-    },
-    {
-      "version": "2.5.3",
-      "date": "2026-10-31",
-      "title": "Üç widget ve doğru renkler",
-      "title_en": "Three widgets and correct colors",
-      "items": [
-        {
-          "title": "Küçük ve Pozisyonlar widget'ları",
-          "text": "Android'de artık üç widget var: Küçük (varlık ve bugünkü sonuç), Özet ve Pozisyonlar (açık işlemler ve her birinin kâr/zararı). Telefonun widget listesinden seçebilirsiniz.",
-          "title_en": "Small and Positions widgets",
-          "text_en": "Android now has three widgets: Small (equity and today's result), Summary and Positions (open trades and the profit/loss of each). Pick them from your phone's widget list.",
-          "admin": false
-        },
-        {
-          "title": "Widget renkleri",
-          "text": "Bugünkü sonuç ve açık kâr/zarar artık ayrı renkte: artı yeşil, eksi kırmızı.",
-          "title_en": "Widget colors",
-          "text_en": "Today's result and open profit/loss now have separate colors: plus is green, minus is red.",
-          "admin": false
-        }
-      ]
     }
   ],
   "windows": {
-    "version": "2.7.1",
-    "url": "https://github.com/syhnist/rositradebot/releases/download/v2.7.1/RosiTradeBot-Setup-2.7.1.exe",
-    "sha256": "89e13878c9cf832fa1257e8c8aed4e7db174e91a952eb4c499305dfb8e9bc847",
+    "version": "2.7.2",
+    "url": "https://github.com/syhnist/rositradebot/releases/download/v2.7.2/RosiTradeBot-Setup-2.7.2.exe",
+    "sha256": "611ea03d61c26b3abea64b5a61472d1da4b8b19969e62988f1693650164ecef9",
     "page": "https://syhnist.github.io/rositradebot/#windows"
   },
   "linux": {
-    "version": "2.7.1",
-    "url": "https://github.com/syhnist/rositradebot/releases/download/v2.7.1/RosiTradeBot-linux-2.7.1.tar.gz",
-    "sha256": "067a1f11414e63806e6cd9a2ecf9e04a5ab7e5bbee3d5dd448474a74c6cb418e",
+    "version": "2.7.2",
+    "url": "https://github.com/syhnist/rositradebot/releases/download/v2.7.2/RosiTradeBot-linux-2.7.2.tar.gz",
+    "sha256": "04d7ab3d0291222707eaec668fc7bf718fb1434ad5b50612bc01710d37b55c73",
     "page": "https://syhnist.github.io/rositradebot/#linux"
   },
   "android": {
