@@ -1,9 +1,73 @@
 {
-  "version": "2.6.1",
+  "version": "2.7.0",
   "date": "2026-10-31",
-  "releases": "https://github.com/syhnist/rositradebot/releases/tag/v2.6.1",
+  "releases": "https://github.com/syhnist/rositradebot/releases/tag/v2.7.0",
   "revoked": [],
   "notes": [
+    {
+      "version": "2.7.0",
+      "date": "2026-10-31",
+      "title": "Elle SL/TP, sunucu dışı yedek, gerçek maliyet takibi",
+      "title_en": "Manual SL/TP, off-site backup, real cost tracking",
+      "items": [
+        {
+          "title": "Pozisyonda SL ve TP değiştirme",
+          "text": "Pozisyon kartında SL/TP düğmesi var: yeni seviyeyi yazarken kaç USDT olacağını görürsün. Yeni emir borsada kurulmadan eskisi silinmez.",
+          "title_en": "Change SL and TP on a position",
+          "text_en": "The position card has an SL/TP button: you see the USDT amount as you type a new level. The old order isn't removed until the new one is on the exchange.",
+          "admin": false
+        },
+        {
+          "title": "En küçük stop mesafesi",
+          "text": "Stop girişe %0,3'ten yakınsa işlem açılmaz; böyle stoplar gürültüyle patlıyordu. Kâr artırmaz, emniyet kuralıdır.",
+          "title_en": "Minimum stop distance",
+          "text_en": "No trade opens if the stop is closer than 0.3% to entry; such stops were hit by noise. It doesn't add profit; it's a safety rule.",
+          "admin": true
+        },
+        {
+          "title": "Gerçek işlem ve test karşılaştırması",
+          "text": "Backtest sayfası gerçek komisyon, kayma, stop dolum kaybı ve fonlamayı testin varsayımlarıyla karşılaştırır.",
+          "title_en": "Real trades vs test",
+          "text_en": "The Backtest page compares real fees, slippage, stop fill loss and funding with the test's assumptions.",
+          "admin": false
+        },
+        {
+          "title": "Sunucu dışı yedek",
+          "text": "Veritabanı günde bir parolayla şifrelenip Telegram'a gönderilebilir. Veri Bakımı sayfasından parola belirleyip açılır.",
+          "title_en": "Off-site backup",
+          "text_en": "The database can be password-encrypted and sent to Telegram once a day. Set a password on the Data Maintenance page to turn it on.",
+          "admin": true
+        },
+        {
+          "title": "Daha gerçekçi backtest",
+          "text": "Geçmiş fonlama ücretleri ve dönemde işlem görüp sonradan kapanan coinler teste dahil edildi. Bu yüzden eski sonuçlardan farklı sayılar görebilirsin.",
+          "title_en": "More realistic backtest",
+          "text_en": "Past funding fees and coins that traded in the period but were later delisted are now included, so you may see different numbers than before.",
+          "admin": false
+        },
+        {
+          "title": "Likit Swing kaldırıldı",
+          "text": "Daha gerçekçi testte Likit Swing'in son yarısı zararda çıktı, bu yüzden paketlerden çıkarıldı. Bu paketi kullanıyorsan ayarların aynen çalışmaya devam eder.",
+          "title_en": "Liquid Swing removed",
+          "text_en": "In the more realistic test, Liquid Swing's second half lost money, so it was removed from the packages. If you use it, your settings keep working as they are.",
+          "admin": true
+        },
+        {
+          "title": "Anlık bildirim modu",
+          "text": "Android uygulamasında açılınca telefon bota dakikada bir bakar. Google hesabı gerekmez; pil kullanımı biraz artar.",
+          "title_en": "Live alert mode",
+          "text_en": "When turned on in the Android app, the phone checks the bot every minute. No Google account needed; battery use rises a little.",
+          "admin": false
+        },
+        {
+          "title": "Widget'larda maskot",
+          "text": "Widget'taki robotun yüzü bugünkü sonuca ve bot durumuna göre değişir.",
+          "title_en": "Mascot on widgets",
+          "text_en": "The robot's face on the widget changes with today's result and the bot's status.",
+          "admin": false
+        }
+      ]
+    },
     {
       "version": "2.6.1",
       "date": "2026-10-31",
@@ -190,53 +254,24 @@
           "admin": false
         }
       ]
-    },
-    {
-      "version": "2.5.1",
-      "date": "2026-10-30",
-      "title": "Telefonda bildirim, widget ve uygulama içi güncelleme",
-      "title_en": "Phone notifications, widget and in-app updates",
-      "items": [
-        {
-          "title": "Uygulama kapalıyken bildirim",
-          "text": "Android uygulaması artık kapalıyken de pozisyon açılış/kapanış, risk durdurması ve bot sorunlarını bildirir. Telefon yaklaşık 15 dakikada bir kontrol eder; anlık uyarı için Telegram açık kalsın. Uygulamayı açıp bir kez giriş yapmak yeterli.",
-          "title_en": "Notifications while the app is closed",
-          "text_en": "The Android app now reports position opens/closes, risk stops and bot problems even while closed. The phone checks about every 15 minutes; keep Telegram on for instant alerts. Opening the app and signing in once is enough.",
-          "admin": false
-        },
-        {
-          "title": "Ana ekran widget'ı",
-          "text": "Ana ekrana RosiTradeBot widget'ı ekleyebilirsiniz: bot durumu, toplam varlık, bugünkü kâr/zarar ve açık pozisyon sayısı. Sağ üstteki düğme hemen yeniler.",
-          "title_en": "Home screen widget",
-          "text_en": "You can add a RosiTradeBot widget to your home screen: bot status, total equity, today's profit/loss and open positions. The top-right button refreshes it at once.",
-          "admin": false
-        },
-        {
-          "title": "Güncelleme uygulamanın içinden",
-          "text": "Yeni sürüm çıkınca uygulama sorar, indirir ve doğrulayıp kurar; siteye girmeniz gerekmez. Bot ve ayarlarınız etkilenmez.",
-          "title_en": "Updates inside the app",
-          "text_en": "When a new version is out, the app asks, downloads, verifies and installs it; no need to visit the site. Your bot and settings are not affected.",
-          "admin": false
-        }
-      ]
     }
   ],
   "windows": {
-    "version": "2.6.1",
-    "url": "https://github.com/syhnist/rositradebot/releases/download/v2.6.1/RosiTradeBot-Setup-2.6.1.exe",
-    "sha256": "d5355b03c0037ee6985ea76471edd39d8df4ebefdc99df1a2d9dbed044b876bf",
+    "version": "2.7.0",
+    "url": "https://github.com/syhnist/rositradebot/releases/download/v2.7.0/RosiTradeBot-Setup-2.7.0.exe",
+    "sha256": "d4b8a56daaeca7123f5ebf61c041ddc078f52af63df3d16eaf45f1c4fc77dd6f",
     "page": "https://syhnist.github.io/rositradebot/#windows"
   },
   "linux": {
-    "version": "2.6.1",
-    "url": "https://github.com/syhnist/rositradebot/releases/download/v2.6.1/RosiTradeBot-linux-2.6.1.tar.gz",
-    "sha256": "e0b9933a0f0030674a894ef1128d9c6abf27daa62704154da2a9fb797ffc9f27",
+    "version": "2.7.0",
+    "url": "https://github.com/syhnist/rositradebot/releases/download/v2.7.0/RosiTradeBot-linux-2.7.0.tar.gz",
+    "sha256": "d3a6685a05b641b38b4742169ee9821e33d4064194f360e97ed7b72300d7477e",
     "page": "https://syhnist.github.io/rositradebot/#linux"
   },
   "android": {
-    "version": "2.6.1",
-    "url": "https://github.com/syhnist/rositradebot/releases/download/v2.6.1/RosiTradeBot-android-2.6.1.apk",
-    "sha256": "baa359e3a61abcc74cfff66da86bb249570129247e5cb572bcf5a71161ce5549",
+    "version": "2.7.0",
+    "url": "https://github.com/syhnist/rositradebot/releases/download/v2.7.0/RosiTradeBot-android-2.7.0.apk",
+    "sha256": "0c7172ed95ee220cfca8fcd22441a1f67757a9fab227137e54a2341652472a2d",
     "page": "https://syhnist.github.io/rositradebot/#android"
   }
 }
