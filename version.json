@@ -1,9 +1,38 @@
 {
-  "version": "2.7.4",
+  "version": "2.7.5",
   "date": "2026-10-31",
-  "releases": "https://github.com/syhnist/rositradebot/releases/tag/v2.7.4",
+  "releases": "https://github.com/syhnist/rositradebot/releases/tag/v2.7.5",
   "revoked": [],
   "notes": [
+    {
+      "version": "2.7.5",
+      "date": "2026-10-31",
+      "title": "Maskot parkuru",
+      "title_en": "Mascot parkour",
+      "items": [
+        {
+          "title": "Parkur gösterisi",
+          "text": "Maskot sıkılınca sinsi sinsi bakıyor, düğmelerin üstüne takla atarak atlıyor, kenardan kayıp düşüyor, sersemliyor ve duvardan tırmanıp yerine dönüyor. Ayarlar'dan kapatılır ya da Şimdi yap ile izlenir.",
+          "title_en": "Parkour show",
+          "text_en": "When bored, the mascot peeks around slyly, flips onto buttons, slips off an edge, gets dizzy and climbs the wall back home. Turn it off in Settings or watch it with Do it now.",
+          "admin": false
+        },
+        {
+          "title": "Sinyalde heyecan, kârda dans, zararda sigara",
+          "text": "Yeni sinyalde zıplayıp heyecanlanıyor, kârda uzun bir dans şovu yapıyor, zararda boynunu büküp sigarasını yakıyor.",
+          "title_en": "Excited on signals, dances on profit, smokes on losses",
+          "text_en": "It jumps with excitement on a new signal, puts on a long dance show on profit, and droops and lights a cigarette on a loss.",
+          "admin": false
+        },
+        {
+          "title": "Daha uzun hareketler",
+          "text": "Yürüyüş, zıplama, dans ve yüz ifadeleri artık daha uzun sürüyor.",
+          "title_en": "Longer moves",
+          "text_en": "Walking, jumping, dancing and facial expressions now last longer.",
+          "admin": false
+        }
+      ]
+    },
     {
       "version": "2.7.4",
       "date": "2026-10-31",
@@ -141,54 +170,18 @@
           "admin": false
         }
       ]
-    },
-    {
-      "version": "2.6.1",
-      "date": "2026-10-31",
-      "title": "Canlı maskot, radardan onaylı işlem, ayrıntılı widget",
-      "title_en": "Living mascot, confirmed radar trades, detailed widget",
-      "items": [
-        {
-          "title": "Radardan onaylı işlem",
-          "text": "Uygun adaylarda (taze, yeterli hacim, BTC ters yönde değil) İşlem aç düğmesi çıkar. Kararı sen verirsin; işlem botun risk limitlerinden geçer, SL ve TP sabit kalır. Radar kendiliğinden işlem açmaz.",
-          "title_en": "Confirmed radar trades",
-          "text_en": "Suitable candidates (fresh, enough volume, BTC not moving against) show an Open trade button. You decide; the trade passes the bot's risk limits and SL and TP stay fixed. The radar never trades by itself.",
-          "admin": true
-        },
-        {
-          "title": "Daha okunur Telegram mesajları",
-          "text": "Sinyal ve pozisyon mesajları sadeleşti: giriş, stop ve hedef ayrı satırda, stop ve hedefte kaç USDT olduğu yazıyor, ham gösterge sayıları yok. Reddedilen sinyaller iki satıra indi.",
-          "title_en": "More readable Telegram messages",
-          "text_en": "Signal and position messages are simpler: entry, stop and target on separate lines with the USDT amount at each, and no raw indicator numbers. Rejected signals are now two lines.",
-          "admin": false
-        },
-        {
-          "title": "Yeni maskot",
-          "text": "Logo artık canlı bir robot: gözleriyle etrafa bakıyor ve göz kırpıyor. Kâr gelince ekranında ok çıkıp sırıtıyor, zararda üzülüyor, hata olunca sinirleniyor, bot duraklayınca uyukluyor. Dokununca tepki veriyor; çok dürtersen kızıyor.",
-          "title_en": "New mascot",
-          "text_en": "The logo is now a living robot: it looks around and blinks. On profit an arrow appears on its screen and it grins; it gets sad on losses, angry on errors and dozes when the bot is paused. It reacts when you tap it, and gets annoyed if you poke it too much.",
-          "admin": false
-        },
-        {
-          "title": "Pozisyonlar widget'ı ayrıntılandı",
-          "text": "Her pozisyon için SL ve TP fiyatı, oraya gelince yaklaşık kâr/zarar, SL ile TP arasındaki konum çubuğu, kaldıraç, giriş ve anlık fiyat ile kademe görünür. Widget'ı büyüttükçe daha çok pozisyon sığar.",
-          "title_en": "More detail in the Positions widget",
-          "text_en": "Each position shows SL and TP prices, the approximate profit/loss at each, a bar for where price sits between them, leverage, entry and mark price, and the stage. Make the widget bigger to fit more positions.",
-          "admin": false
-        }
-      ]
     }
   ],
   "windows": {
-    "version": "2.7.4",
-    "url": "https://github.com/syhnist/rositradebot/releases/download/v2.7.4/RosiTradeBot-Setup-2.7.4.exe",
-    "sha256": "40f657f39d13d109ddfe3b1f2a61066424a493165a6517d5cef754345c1a962b",
+    "version": "2.7.5",
+    "url": "https://github.com/syhnist/rositradebot/releases/download/v2.7.5/RosiTradeBot-Setup-2.7.5.exe",
+    "sha256": "3dad1735c2284e6cec8d5ed025e9afa6e1688ca9de8155cb821fcb07f3290b75",
     "page": "https://syhnist.github.io/rositradebot/#windows"
   },
   "linux": {
-    "version": "2.7.4",
-    "url": "https://github.com/syhnist/rositradebot/releases/download/v2.7.4/RosiTradeBot-linux-2.7.4.tar.gz",
-    "sha256": "113153a46bf416bd43f0bb0789f186db7866913fd2ad78062e38634e1ddece34",
+    "version": "2.7.5",
+    "url": "https://github.com/syhnist/rositradebot/releases/download/v2.7.5/RosiTradeBot-linux-2.7.5.tar.gz",
+    "sha256": "1b4bc7bba52f4bcfc7d84446abd61be5c69eb16c7fa4674ede96b72b2248d000",
     "page": "https://syhnist.github.io/rositradebot/#linux"
   },
   "android": {
