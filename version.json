@@ -1,9 +1,24 @@
 {
-  "version": "2.7.2",
+  "version": "2.7.3",
   "date": "2026-10-31",
-  "releases": "https://github.com/syhnist/rositradebot/releases/tag/v2.7.2",
+  "releases": "https://github.com/syhnist/rositradebot/releases/tag/v2.7.3",
   "revoked": [],
   "notes": [
+    {
+      "version": "2.7.3",
+      "date": "2026-10-31",
+      "title": "Maskotun bacakları çıktı",
+      "title_en": "The mascot grew legs",
+      "items": [
+        {
+          "title": "Daha canlı maskot",
+          "text": "Robot ara sıra bacaklarını çıkarıp yürüyor, zıplıyor ve anten sallıyor. Kârda dans ediyor, hatada ayak vuruyor, uyurken z çıkarıyor. Her hareketin kendi sesi var; kendi kendine yaptıklarında ses kısık.",
+          "title_en": "A livelier mascot",
+          "text_en": "The robot now pops out its legs to walk, jump and wiggle its antenna. It dances on profit, stomps on errors and shows a z while asleep. Each move has its own sound, quieter when it does them on its own.",
+          "admin": false
+        }
+      ]
+    },
     {
       "version": "2.7.2",
       "date": "2026-10-31",
@@ -197,68 +212,18 @@
           "admin": false
         }
       ]
-    },
-    {
-      "version": "2.5.4",
-      "date": "2026-10-31",
-      "title": "Güncellemeleri denetle, pozisyonda TP/SL tutarı",
-      "title_en": "Check for updates, TP/SL amounts on positions",
-      "items": [
-        {
-          "title": "Güncellemeleri denetle",
-          "text": "Sistem sayfasına Güncellemeler kartı geldi: istediğiniz an denetlersiniz, kurmadan önce neler geldiğini görürsünüz. Telefon uygulamasında güncelleme otomatik ya da manuel seçilebilir.",
-          "title_en": "Check for updates",
-          "text_en": "The System page has a new Updates card: check whenever you like and see what's coming before you install. In the phone app, updates can be automatic or manual.",
-          "admin": true
-        },
-        {
-          "title": "Sunucu güncellemesi panelden",
-          "text": "Sunucudaki bot artık Sistem sayfasından tek düğmeyle güncellenir; komut yazmak gerekmez. Bu özellik bir kez daha sudo rosi update yaptıktan sonra açılır.",
-          "title_en": "Server update from the panel",
-          "text_en": "The bot on your server now updates with one button on the System page, no commands needed. This turns on after you run sudo rosi update one more time.",
-          "admin": true
-        },
-        {
-          "title": "Pozisyonda TP ve SL tutarı",
-          "text": "Ana ekrandaki pozisyon kartı TP'ye ve SL'ye gelince yaklaşık ne kadar kâr/zarar olacağını gösterir. Yönet bağlantısı pozisyon sayfasına götürür.",
-          "title_en": "TP and SL amounts on positions",
-          "text_en": "The position card on the home screen shows the approximate profit/loss at TP and at SL. The Manage link opens the position page.",
-          "admin": false
-        },
-        {
-          "title": "Telefonda taşan alanlar",
-          "text": "Kademe çubuğu, tablolar ve Kanıt Merkezi telefonda kutularının dışına taşmıyor; geniş tablolar kendi içinde yana kayıyor.",
-          "title_en": "Overflowing areas on phones",
-          "text_en": "The ladder bar, tables and Evidence Center no longer overflow their boxes on phones; wide tables scroll sideways on their own.",
-          "admin": false
-        },
-        {
-          "title": "Kesilen TP ve SL etiketleri",
-          "text": "Telefonda karttan taşan TP ve SL fiyatları artık tam görünüyor.",
-          "title_en": "Cut-off TP and SL labels",
-          "text_en": "TP and SL prices that overflowed the card on phones now show in full.",
-          "admin": false
-        },
-        {
-          "title": "Son hata okununca temizlenir",
-          "text": "Son hata mesajı Okundu düğmesiyle ya da Sistem sayfasından çıkınca kalkar. Kaydı olay günlüğünde durur.",
-          "title_en": "Last error clears once read",
-          "text_en": "The last error message goes away with the Read button or when you leave the System page. It stays in the event log.",
-          "admin": false
-        }
-      ]
     }
   ],
   "windows": {
-    "version": "2.7.2",
-    "url": "https://github.com/syhnist/rositradebot/releases/download/v2.7.2/RosiTradeBot-Setup-2.7.2.exe",
-    "sha256": "611ea03d61c26b3abea64b5a61472d1da4b8b19969e62988f1693650164ecef9",
+    "version": "2.7.3",
+    "url": "https://github.com/syhnist/rositradebot/releases/download/v2.7.3/RosiTradeBot-Setup-2.7.3.exe",
+    "sha256": "60e27a242e9758c0573dc1620dd74a60dbdbce0fc2038c6a66861ba3de8140cc",
     "page": "https://syhnist.github.io/rositradebot/#windows"
   },
   "linux": {
-    "version": "2.7.2",
-    "url": "https://github.com/syhnist/rositradebot/releases/download/v2.7.2/RosiTradeBot-linux-2.7.2.tar.gz",
-    "sha256": "04d7ab3d0291222707eaec668fc7bf718fb1434ad5b50612bc01710d37b55c73",
+    "version": "2.7.3",
+    "url": "https://github.com/syhnist/rositradebot/releases/download/v2.7.3/RosiTradeBot-linux-2.7.3.tar.gz",
+    "sha256": "b6a121fcc716add82c13de88dda0badcb483dfa3c6cda4763106d5a186493999",
     "page": "https://syhnist.github.io/rositradebot/#linux"
   },
   "android": {
