@@ -1,9 +1,38 @@
 {
-  "version": "2.8.4",
+  "version": "2.8.5",
   "date": "2026-11-01",
-  "releases": "https://github.com/syhnist/rositradebot/releases/tag/v2.8.4",
+  "releases": "https://github.com/syhnist/rositradebot/releases/tag/v2.8.5",
   "revoked": [],
   "notes": [
+    {
+      "version": "2.8.5",
+      "date": "2026-11-01",
+      "title": "Telefonda hızlı geçiş düğmeleri",
+      "title_en": "Quick jump buttons on phones",
+      "items": [
+        {
+          "title": "Hızlı geçiş",
+          "text": "Telefonda Toplam Varlık kartının sağında Pozisyon, Tarama, Dalga, Radar, Nabız ve Risk düğmeleri var. Dokununca ana ekran o bölüme kayar.",
+          "title_en": "Quick jump",
+          "text_en": "On phones, the right side of the Total Equity card has Position, Scan, Wave, Radar, Pulse and Risk buttons. Tap one and the main screen scrolls to that section.",
+          "admin": false
+        },
+        {
+          "title": "Daha hızlı açılış",
+          "text": "İlk açılışta inen veri yarıdan fazla azaldı, dosyalar telefonda önbellekte kalıyor, hız haritası daha az pil harcıyor, sayfa arka plandayken gereksiz istek gitmiyor. Canlı Tarama ve haritadaki soluk mavi dokunma katmanı da kaldırıldı.",
+          "title_en": "Faster loading",
+          "text_en": "The first download shrank by more than half, files stay cached on the phone, the speed map uses less battery, and no needless requests go out while the page is in the background. The pale blue tap layer on Live Scan and the map is gone too.",
+          "admin": false
+        },
+        {
+          "title": "Basılı tutma menüsü kapatıldı",
+          "text": "Telefonda yazıya basılı tutunca kopyala/kes menüsü çıkmaz. Yazı girilen alanlar ve kopyalanacak kodlar seçilebilir kalır.",
+          "title_en": "Long-press menu disabled",
+          "text_en": "Long-pressing text on a phone no longer opens the copy/cut menu. Input fields and codes to copy stay selectable.",
+          "admin": false
+        }
+      ]
+    },
     {
       "version": "2.8.4",
       "date": "2026-11-01",
@@ -141,40 +170,18 @@
           "admin": false
         }
       ]
-    },
-    {
-      "version": "2.7.6",
-      "date": "2026-10-31",
-      "title": "Ayrıntılı işlem geçmişi",
-      "title_en": "Detailed trade history",
-      "items": [
-        {
-          "title": "İşlem geçmişi",
-          "text": "İşlem Geçmişi menüde Sinyaller'in altına geldi. Telefonda kart olarak açılır: giriş, büyüklük, kaldıraç, ilk ve son SL/TP, net sonuç.",
-          "title_en": "Trade history",
-          "text_en": "Trade History now sits under Signals in the menu. On phones it opens as cards: entry, size, leverage, first and last SL/TP, net result.",
-          "admin": false
-        },
-        {
-          "title": "İşlem akışı",
-          "text": "Her işlemin adım adım hikâyesi: giriş, stop ve hedef değişimleri, azaltmalar ve kapanış.",
-          "title_en": "Trade story",
-          "text_en": "A step-by-step story of each trade: entry, stop and target changes, reductions and close.",
-          "admin": false
-        }
-      ]
     }
   ],
   "windows": {
-    "version": "2.8.4",
-    "url": "https://github.com/syhnist/rositradebot/releases/download/v2.8.4/RosiTradeBot-Setup-2.8.4.exe",
-    "sha256": "03dca6d9b47970efb92683f2999819101e81c741280c3958ee529dcd6be10f0a",
+    "version": "2.8.5",
+    "url": "https://github.com/syhnist/rositradebot/releases/download/v2.8.5/RosiTradeBot-Setup-2.8.5.exe",
+    "sha256": "41e89b4f198b86de50ebe77cb2c467cb7acfb0648b9a1941948d2a86cfcbc87e",
     "page": "https://syhnist.github.io/rositradebot/#windows"
   },
   "linux": {
-    "version": "2.8.4",
-    "url": "https://github.com/syhnist/rositradebot/releases/download/v2.8.4/RosiTradeBot-linux-2.8.4.tar.gz",
-    "sha256": "a7199191477f3726ad0b4cc12ab3a377cc12221651ab3675f2913b16be44e845",
+    "version": "2.8.5",
+    "url": "https://github.com/syhnist/rositradebot/releases/download/v2.8.5/RosiTradeBot-linux-2.8.5.tar.gz",
+    "sha256": "d062c3ff75bcf8bc8bc6cf9c0b823a3dde67efeb2eacfe3860ab219e32d7460d",
     "page": "https://syhnist.github.io/rositradebot/#linux"
   },
   "android": {
