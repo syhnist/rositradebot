@@ -1,9 +1,38 @@
 {
-  "version": "2.8.2",
+  "version": "2.8.3",
   "date": "2026-11-01",
-  "releases": "https://github.com/syhnist/rositradebot/releases/tag/v2.8.2",
+  "releases": "https://github.com/syhnist/rositradebot/releases/tag/v2.8.3",
   "revoked": [],
   "notes": [
+    {
+      "version": "2.8.3",
+      "date": "2026-11-01",
+      "title": "Dalga Avcısı yenilendi, Canlı Grafik'te tüm coinler",
+      "title_en": "Wave Hunter redesigned, all coins on Live Chart",
+      "items": [
+        {
+          "title": "Hız haritası",
+          "text": "Dalga çizimi kalktı. Yeni haritada sağa gittikçe coin son 15 dakikada yükselmiş, yukarı gittikçe hacmi hızlanmış demektir; yeşil bölgeye giren coin için sinyal gelir. Yanında En yakın aday, şartlar ve yakınlık sırası görünür.",
+          "title_en": "Speed map",
+          "text_en": "The wave drawing is gone. On the new map, further right means the coin rose in the last 15 minutes and higher means volume sped up; a coin entering the green zone triggers a signal. The closest candidate, its conditions and the ranking sit alongside.",
+          "admin": false
+        },
+        {
+          "title": "Anlaşılır adlar",
+          "text": "Coin durumları artık Sakin, Yükselişe geçiyor, Yükselişte, Çok şişti ve Düşüşte. Sinyaller Erken yükseliş, Zayıf coin ve Şişkinlik dönüşü oldu.",
+          "title_en": "Clearer names",
+          "text_en": "Coin states are now Calm, Starting to rise, Rising, Overheated and Falling. Signals are Early rise, Weak coin and Overheat reversal.",
+          "admin": false
+        },
+        {
+          "title": "Canlı Grafik'te tüm coinler",
+          "text": "Liste borsadaki tüm vadeli coinleri gösterir, arama kutusuyla bulunur. Radar ve Dalga bağlantıları artık doğru coini açar.",
+          "title_en": "All coins on Live Chart",
+          "text_en": "The list shows every futures coin on the exchange, with a search box. Radar and Wave links now open the right coin.",
+          "admin": false
+        }
+      ]
+    },
     {
       "version": "2.8.2",
       "date": "2026-11-01",
@@ -141,40 +170,18 @@
           "admin": false
         }
       ]
-    },
-    {
-      "version": "2.7.4",
-      "date": "2026-10-31",
-      "title": "Maskot artık konuşur gibi",
-      "title_en": "The mascot almost talks now",
-      "items": [
-        {
-          "title": "Yeni maskot sesleri",
-          "text": "Bip sesleri yerine konuşmaya benzeyen heceler geldi: mırıldanıyor, huzursuzlanıyor, şaşırıyor, kıkırdıyor, iç çekiyor, horluyor. Sesler her seferinde biraz farklı. Ayarlar'daki Dinle düğmesi sırayla çalar.",
-          "title_en": "New mascot sounds",
-          "text_en": "Beeps are replaced with speech-like syllables: it murmurs, frets, gasps, giggles, sighs and snores. Sounds differ a little every time. The Listen button in Settings plays them in turn.",
-          "admin": false
-        },
-        {
-          "title": "Yanlış motor uyarısı",
-          "text": "Motor sağlıklıyken ara sıra çıkan \"heartbeat göndermiyor\" uyarısı düzeltildi.",
-          "title_en": "False engine warning",
-          "text_en": "Fixed the occasional \"no heartbeat\" warning shown while the engine was healthy.",
-          "admin": true
-        }
-      ]
     }
   ],
   "windows": {
-    "version": "2.8.2",
-    "url": "https://github.com/syhnist/rositradebot/releases/download/v2.8.2/RosiTradeBot-Setup-2.8.2.exe",
-    "sha256": "7fb64d4b950748ce91466dd4f3286d276f9bb8643ef6e2268bbaceecd267e68d",
+    "version": "2.8.3",
+    "url": "https://github.com/syhnist/rositradebot/releases/download/v2.8.3/RosiTradeBot-Setup-2.8.3.exe",
+    "sha256": "6b36efc57d0442a5412656e134845c33a5068c21a26268ede4f65e7eaf578d8f",
     "page": "https://syhnist.github.io/rositradebot/#windows"
   },
   "linux": {
-    "version": "2.8.2",
-    "url": "https://github.com/syhnist/rositradebot/releases/download/v2.8.2/RosiTradeBot-linux-2.8.2.tar.gz",
-    "sha256": "b708c6754c476c8a16c9bf730cd4ab19dcd4c1a3645970753f8872d1d3fec1db",
+    "version": "2.8.3",
+    "url": "https://github.com/syhnist/rositradebot/releases/download/v2.8.3/RosiTradeBot-linux-2.8.3.tar.gz",
+    "sha256": "e134d1cb7e834fb29ba4ae1e5cdd81819e58e0d95ed4aef17e9675610bf4d8e2",
     "page": "https://syhnist.github.io/rositradebot/#linux"
   },
   "android": {
