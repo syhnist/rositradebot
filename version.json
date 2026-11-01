@@ -1,9 +1,31 @@
 {
-  "version": "2.8.8",
+  "version": "2.8.9",
   "date": "2026-11-01",
-  "releases": "https://github.com/syhnist/rositradebot/releases/tag/v2.8.8",
+  "releases": "https://github.com/syhnist/rositradebot/releases/tag/v2.8.9",
   "revoked": [],
   "notes": [
+    {
+      "version": "2.8.9",
+      "date": "2026-11-01",
+      "title": "Radar işlemlerinde teminat düzeltmesi",
+      "title_en": "Margin fix for Radar trades",
+      "items": [
+        {
+          "title": "Radar işlemi senin teminatınla açılır",
+          "text": "Hareket Radarı'ndan açılan işlemler genel risk ayarıyla boyutlanıyordu ve çok büyük olabiliyordu. Artık Dalga Avcısı'ndaki teminat ve kaldıraç ayarını kullanır.",
+          "title_en": "Radar trades use your margin",
+          "text_en": "Trades opened from Move Radar were sized by the general risk setting and could be very large. They now use the margin and leverage set under Wave Hunter.",
+          "admin": false
+        },
+        {
+          "title": "Onay penceresinde tutarlar",
+          "text": "İşlem aç penceresi teminatı, kaldıracı, pozisyon büyüklüğünü ve stopta oluşacak zararı onaydan önce gösterir.",
+          "title_en": "Amounts in the confirmation window",
+          "text_en": "The Open trade window shows margin, leverage, position size and the loss at the stop before you confirm.",
+          "admin": false
+        }
+      ]
+    },
     {
       "version": "2.8.8",
       "date": "2026-11-01",
@@ -127,47 +149,18 @@
           "admin": false
         }
       ]
-    },
-    {
-      "version": "2.8.3",
-      "date": "2026-11-01",
-      "title": "Dalga Avcısı yenilendi, Canlı Grafik'te tüm coinler",
-      "title_en": "Wave Hunter redesigned, all coins on Live Chart",
-      "items": [
-        {
-          "title": "Hız haritası",
-          "text": "Dalga çizimi kalktı. Yeni haritada sağa gittikçe coin son 15 dakikada yükselmiş, yukarı gittikçe hacmi hızlanmış demektir; yeşil bölgeye giren coin için sinyal gelir. Yanında En yakın aday, şartlar ve yakınlık sırası görünür.",
-          "title_en": "Speed map",
-          "text_en": "The wave drawing is gone. On the new map, further right means the coin rose in the last 15 minutes and higher means volume sped up; a coin entering the green zone triggers a signal. The closest candidate, its conditions and the ranking sit alongside.",
-          "admin": false
-        },
-        {
-          "title": "Anlaşılır adlar",
-          "text": "Coin durumları artık Sakin, Yükselişe geçiyor, Yükselişte, Çok şişti ve Düşüşte. Sinyaller Erken yükseliş, Zayıf coin ve Şişkinlik dönüşü oldu.",
-          "title_en": "Clearer names",
-          "text_en": "Coin states are now Calm, Starting to rise, Rising, Overheated and Falling. Signals are Early rise, Weak coin and Overheat reversal.",
-          "admin": false
-        },
-        {
-          "title": "Canlı Grafik'te tüm coinler",
-          "text": "Liste borsadaki tüm vadeli coinleri gösterir, arama kutusuyla bulunur. Radar ve Dalga bağlantıları artık doğru coini açar.",
-          "title_en": "All coins on Live Chart",
-          "text_en": "The list shows every futures coin on the exchange, with a search box. Radar and Wave links now open the right coin.",
-          "admin": false
-        }
-      ]
     }
   ],
   "windows": {
-    "version": "2.8.8",
-    "url": "https://github.com/syhnist/rositradebot/releases/download/v2.8.8/RosiTradeBot-Setup-2.8.8.exe",
-    "sha256": "c4d3810bba199534c23f915530d92600a2ece378b74a2f2bf3a38ccc494700e6",
+    "version": "2.8.9",
+    "url": "https://github.com/syhnist/rositradebot/releases/download/v2.8.9/RosiTradeBot-Setup-2.8.9.exe",
+    "sha256": "134859f3226fa5a994050279ee142919ad4afd7e787151a85212c784624bc6d7",
     "page": "https://syhnist.github.io/rositradebot/#windows"
   },
   "linux": {
-    "version": "2.8.8",
-    "url": "https://github.com/syhnist/rositradebot/releases/download/v2.8.8/RosiTradeBot-linux-2.8.8.tar.gz",
-    "sha256": "a13938db90eabc3e4a6cfb43d44035b4a78063a7f302bbb121089ee4f8441084",
+    "version": "2.8.9",
+    "url": "https://github.com/syhnist/rositradebot/releases/download/v2.8.9/RosiTradeBot-linux-2.8.9.tar.gz",
+    "sha256": "1caa7301dbea8c2063fcbd7bcbcf9fc0498dddb391cabf3800959cbb6c0f6e53",
     "page": "https://syhnist.github.io/rositradebot/#linux"
   },
   "android": {
