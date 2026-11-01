@@ -1,9 +1,24 @@
 {
-  "version": "2.8.7",
+  "version": "2.8.8",
   "date": "2026-11-01",
-  "releases": "https://github.com/syhnist/rositradebot/releases/tag/v2.8.7",
+  "releases": "https://github.com/syhnist/rositradebot/releases/tag/v2.8.8",
   "revoked": [],
   "notes": [
+    {
+      "version": "2.8.8",
+      "date": "2026-11-01",
+      "title": "Dalga Avcısı öğreniyor",
+      "title_en": "Wave Hunter learns",
+      "items": [
+        {
+          "title": "Kendi sonuçlarından öğrenme",
+          "text": "Dalga Avcısı her sinyalin ve yakın adayların sonucunu kaydeder, hangi koşulların iyi gittiğini çıkarır ve yeni sinyale puan verir. Tahmin gücü canlı sonuçlarda kanıtlanınca zayıf sinyalleri onaysız açmaz; kanıt bozulursa kendiliğinden geri çekilir.",
+          "title_en": "Learning from its own results",
+          "text_en": "Wave Hunter records the outcome of every signal and near-miss, works out which conditions go well and scores new signals. Once its predictions prove themselves on live results, it stops auto-opening weak signals; if the proof fades, it steps back by itself.",
+          "admin": false
+        }
+      ]
+    },
     {
       "version": "2.8.7",
       "date": "2026-11-01",
@@ -141,40 +156,18 @@
           "admin": false
         }
       ]
-    },
-    {
-      "version": "2.8.2",
-      "date": "2026-11-01",
-      "title": "Telegram bildirimleri düzeltildi",
-      "title_en": "Telegram alerts fixed",
-      "items": [
-        {
-          "title": "Bildirim servisi",
-          "text": "2.8.0 ile sunucuda duran bildirim servisi yeniden çalışıyor. Grafik çizilemese bile bildirimler artık metin olarak gider. Kuyrukta eskiyen Dalga sinyalleri gönderilmez.",
-          "title_en": "Alert service",
-          "text_en": "The alert service that stopped on servers with 2.8.0 runs again. If a chart can't be drawn, the alert still goes out as text. Wave signals that went stale in the queue are not sent.",
-          "admin": true
-        },
-        {
-          "title": "Telegram sayfası telefonda",
-          "text": "Bağlantı durumundaki değerler telefonda kesilmiyor.",
-          "title_en": "Telegram page on phones",
-          "text_en": "Connection status values are no longer cut off on phones.",
-          "admin": true
-        }
-      ]
     }
   ],
   "windows": {
-    "version": "2.8.7",
-    "url": "https://github.com/syhnist/rositradebot/releases/download/v2.8.7/RosiTradeBot-Setup-2.8.7.exe",
-    "sha256": "a7147b2ddcfac7e9be1c0e0d8299fbc7d37ef1bc3bf6582cf1d0cb4a637c6504",
+    "version": "2.8.8",
+    "url": "https://github.com/syhnist/rositradebot/releases/download/v2.8.8/RosiTradeBot-Setup-2.8.8.exe",
+    "sha256": "c4d3810bba199534c23f915530d92600a2ece378b74a2f2bf3a38ccc494700e6",
     "page": "https://syhnist.github.io/rositradebot/#windows"
   },
   "linux": {
-    "version": "2.8.7",
-    "url": "https://github.com/syhnist/rositradebot/releases/download/v2.8.7/RosiTradeBot-linux-2.8.7.tar.gz",
-    "sha256": "9481f6625852c808f5b7b6ac2e086be59e0afb57dbdaf5df9fefffbccb1ae44d",
+    "version": "2.8.8",
+    "url": "https://github.com/syhnist/rositradebot/releases/download/v2.8.8/RosiTradeBot-linux-2.8.8.tar.gz",
+    "sha256": "a13938db90eabc3e4a6cfb43d44035b4a78063a7f302bbb121089ee4f8441084",
     "page": "https://syhnist.github.io/rositradebot/#linux"
   },
   "android": {
