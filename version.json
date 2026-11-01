@@ -1,9 +1,24 @@
 {
-  "version": "2.8.9",
+  "version": "2.8.10",
   "date": "2026-11-01",
-  "releases": "https://github.com/syhnist/rositradebot/releases/tag/v2.8.9",
+  "releases": "https://github.com/syhnist/rositradebot/releases/tag/v2.8.10",
   "revoked": [],
   "notes": [
+    {
+      "version": "2.8.10",
+      "date": "2026-11-01",
+      "title": "Radar'a ayrı teminat",
+      "title_en": "Separate margin for Radar",
+      "items": [
+        {
+          "title": "Radar teminatı ve kaldıracı ayrıldı",
+          "text": "Hareket Radarı'nın teminat ve kaldıraç ayarı artık kendi sekmesinde. Dalga Avcısı ayarları Radar'ı, Radar ayarları Dalga Avcısı'nı etkilemez.",
+          "title_en": "Radar margin and leverage are separate",
+          "text_en": "Move Radar's margin and leverage now live in its own tab. Wave Hunter settings don't affect Radar, and Radar settings don't affect Wave Hunter.",
+          "admin": false
+        }
+      ]
+    },
     {
       "version": "2.8.9",
       "date": "2026-11-01",
@@ -127,40 +142,18 @@
           "admin": false
         }
       ]
-    },
-    {
-      "version": "2.8.4",
-      "date": "2026-11-01",
-      "title": "Hız haritası düzeltmeleri",
-      "title_en": "Speed map fixes",
-      "items": [
-        {
-          "title": "Dokununca mavi ekran",
-          "text": "Telefonda haritaya dokununca çıkan soluk mavi katman kaldırıldı.",
-          "title_en": "Blue screen on tap",
-          "text_en": "Removed the pale blue layer that appeared when tapping the map on phones.",
-          "admin": false
-        },
-        {
-          "title": "Harita daha çabuk doluyor",
-          "text": "Bot yeniden başlayınca hacim hızı 15 dakika yerine yaklaşık 3 dakikada görünür; ölçüm gelene kadar coin adları üst üste binmez.",
-          "title_en": "The map fills in faster",
-          "text_en": "After a bot restart, volume speed appears in about 3 minutes instead of 15, and coin names no longer pile up before the first reading.",
-          "admin": false
-        }
-      ]
     }
   ],
   "windows": {
-    "version": "2.8.9",
-    "url": "https://github.com/syhnist/rositradebot/releases/download/v2.8.9/RosiTradeBot-Setup-2.8.9.exe",
-    "sha256": "134859f3226fa5a994050279ee142919ad4afd7e787151a85212c784624bc6d7",
+    "version": "2.8.10",
+    "url": "https://github.com/syhnist/rositradebot/releases/download/v2.8.10/RosiTradeBot-Setup-2.8.10.exe",
+    "sha256": "0c0f10c2ae202f3143e01c4f37710a4eace28799bec754eaa7e6a9f9b048aeb6",
     "page": "https://syhnist.github.io/rositradebot/#windows"
   },
   "linux": {
-    "version": "2.8.9",
-    "url": "https://github.com/syhnist/rositradebot/releases/download/v2.8.9/RosiTradeBot-linux-2.8.9.tar.gz",
-    "sha256": "1caa7301dbea8c2063fcbd7bcbcf9fc0498dddb391cabf3800959cbb6c0f6e53",
+    "version": "2.8.10",
+    "url": "https://github.com/syhnist/rositradebot/releases/download/v2.8.10/RosiTradeBot-linux-2.8.10.tar.gz",
+    "sha256": "6bb0d4c6b68147a74e6e96a08670d40201b66d17ce0c610667330a50c77e3c6e",
     "page": "https://syhnist.github.io/rositradebot/#linux"
   },
   "android": {
