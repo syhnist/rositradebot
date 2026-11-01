@@ -1,9 +1,31 @@
 {
-  "version": "2.8.3",
+  "version": "2.8.4",
   "date": "2026-11-01",
-  "releases": "https://github.com/syhnist/rositradebot/releases/tag/v2.8.3",
+  "releases": "https://github.com/syhnist/rositradebot/releases/tag/v2.8.4",
   "revoked": [],
   "notes": [
+    {
+      "version": "2.8.4",
+      "date": "2026-11-01",
+      "title": "Hız haritası düzeltmeleri",
+      "title_en": "Speed map fixes",
+      "items": [
+        {
+          "title": "Dokununca mavi ekran",
+          "text": "Telefonda haritaya dokununca çıkan soluk mavi katman kaldırıldı.",
+          "title_en": "Blue screen on tap",
+          "text_en": "Removed the pale blue layer that appeared when tapping the map on phones.",
+          "admin": false
+        },
+        {
+          "title": "Harita daha çabuk doluyor",
+          "text": "Bot yeniden başlayınca hacim hızı 15 dakika yerine yaklaşık 3 dakikada görünür; ölçüm gelene kadar coin adları üst üste binmez.",
+          "title_en": "The map fills in faster",
+          "text_en": "After a bot restart, volume speed appears in about 3 minutes instead of 15, and coin names no longer pile up before the first reading.",
+          "admin": false
+        }
+      ]
+    },
     {
       "version": "2.8.3",
       "date": "2026-11-01",
@@ -141,47 +163,18 @@
           "admin": false
         }
       ]
-    },
-    {
-      "version": "2.7.5",
-      "date": "2026-10-31",
-      "title": "Maskot parkuru",
-      "title_en": "Mascot parkour",
-      "items": [
-        {
-          "title": "Parkur gösterisi",
-          "text": "Maskot sıkılınca sinsi sinsi bakıyor, düğmelerin üstüne takla atarak atlıyor, kenardan kayıp düşüyor, sersemliyor ve duvardan tırmanıp yerine dönüyor. Ayarlar'dan kapatılır ya da Şimdi yap ile izlenir.",
-          "title_en": "Parkour show",
-          "text_en": "When bored, the mascot peeks around slyly, flips onto buttons, slips off an edge, gets dizzy and climbs the wall back home. Turn it off in Settings or watch it with Do it now.",
-          "admin": false
-        },
-        {
-          "title": "Sinyalde heyecan, kârda dans, zararda sigara",
-          "text": "Yeni sinyalde zıplayıp heyecanlanıyor, kârda uzun bir dans şovu yapıyor, zararda boynunu büküp sigarasını yakıyor.",
-          "title_en": "Excited on signals, dances on profit, smokes on losses",
-          "text_en": "It jumps with excitement on a new signal, puts on a long dance show on profit, and droops and lights a cigarette on a loss.",
-          "admin": false
-        },
-        {
-          "title": "Daha uzun hareketler",
-          "text": "Yürüyüş, zıplama, dans ve yüz ifadeleri artık daha uzun sürüyor.",
-          "title_en": "Longer moves",
-          "text_en": "Walking, jumping, dancing and facial expressions now last longer.",
-          "admin": false
-        }
-      ]
     }
   ],
   "windows": {
-    "version": "2.8.3",
-    "url": "https://github.com/syhnist/rositradebot/releases/download/v2.8.3/RosiTradeBot-Setup-2.8.3.exe",
-    "sha256": "6b36efc57d0442a5412656e134845c33a5068c21a26268ede4f65e7eaf578d8f",
+    "version": "2.8.4",
+    "url": "https://github.com/syhnist/rositradebot/releases/download/v2.8.4/RosiTradeBot-Setup-2.8.4.exe",
+    "sha256": "03dca6d9b47970efb92683f2999819101e81c741280c3958ee529dcd6be10f0a",
     "page": "https://syhnist.github.io/rositradebot/#windows"
   },
   "linux": {
-    "version": "2.8.3",
-    "url": "https://github.com/syhnist/rositradebot/releases/download/v2.8.3/RosiTradeBot-linux-2.8.3.tar.gz",
-    "sha256": "e134d1cb7e834fb29ba4ae1e5cdd81819e58e0d95ed4aef17e9675610bf4d8e2",
+    "version": "2.8.4",
+    "url": "https://github.com/syhnist/rositradebot/releases/download/v2.8.4/RosiTradeBot-linux-2.8.4.tar.gz",
+    "sha256": "a7199191477f3726ad0b4cc12ab3a377cc12221651ab3675f2913b16be44e845",
     "page": "https://syhnist.github.io/rositradebot/#linux"
   },
   "android": {
