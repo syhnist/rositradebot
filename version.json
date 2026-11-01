@@ -1,9 +1,52 @@
 {
-  "version": "2.7.6",
-  "date": "2026-10-31",
-  "releases": "https://github.com/syhnist/rositradebot/releases/tag/v2.7.6",
+  "version": "2.8.0",
+  "date": "2026-11-01",
+  "releases": "https://github.com/syhnist/rositradebot/releases/tag/v2.8.0",
   "revoked": [],
   "notes": [
+    {
+      "version": "2.8.0",
+      "date": "2026-11-01",
+      "title": "Dalga Avcısı, anlık coin takibi ve grafikli Telegram",
+      "title_en": "Wave Hunter, live coin tracking and Telegram charts",
+      "items": [
+        {
+          "title": "Dalga Avcısı",
+          "text": "8 şarttan bağımsız yeni sinyal sistemi. Coinler canlı bir dalganın üstünde beş evrede görünür: Birikim, Kabarma, Dalga, Köpük, Çekilme. Tarama ışığı dalgayı süpürür, yeni sinyal halka halka yayılır.",
+          "title_en": "Wave Hunter",
+          "text_en": "A new signal system, separate from the 8 conditions. Coins float on a live wave in five phases: Accumulation, Swell, Wave, Foam, Pullback. A scan beam sweeps the wave and new signals ripple out.",
+          "admin": false
+        },
+        {
+          "title": "Anlık coin takibi",
+          "text": "24 saatlik hacmi 2 milyon doları geçen tüm coinler dakikada bir izlenir. Sessiz coin aniden canlanırsa Uyanış sinyali gelir. İşlem açma kapalı, onaylı ya da küçük riskle otomatik seçilebilir; varsayılan onaylıdır.",
+          "title_en": "Live coin tracking",
+          "text_en": "Every coin above 2 million dollars of 24h volume is watched each minute. When a quiet coin suddenly wakes up you get an Awakening signal. Trading can be off, confirmed or automatic with small risk; the default is confirmed.",
+          "admin": false
+        },
+        {
+          "title": "Grafikli Telegram",
+          "text": "Pozisyon ve Dalga bildirimleri mum grafiğiyle gelir. Panele götüren düğme, /dalga, /grafik BTC ve /sessiz komutları eklendi. Pozisyon listesinde her coinin grafiği tek dokunuşla açılır.",
+          "title_en": "Telegram charts",
+          "text_en": "Position and Wave alerts now arrive with a candle chart. Added a button to the panel and the /dalga, /grafik BTC and /sessiz commands. Each coin's chart opens with one tap from the positions list.",
+          "admin": true
+        },
+        {
+          "title": "Ana ekranda Hareket Radarı",
+          "text": "Son 24 saatin radar kayıtları artık ana ekranda. Uygun adayda İşlem aç düğmesi buradan da kullanılır; Tümü bağlantısı radar sayfasını açar. Kartın yeri Düzenle ile değiştirilir.",
+          "title_en": "Move Radar on the main screen",
+          "text_en": "The last 24 hours of radar records are now on the main screen. The Open trade button works here too on suitable candidates, and the All link opens the radar page. Move the card with Edit.",
+          "admin": false
+        },
+        {
+          "title": "Bildirim doğru sayfayı açar",
+          "text": "Telefonda bildirime dokununca ana ekran yerine ilgili yer açılır: pozisyon bildirimi o pozisyonu, radar bildirimi o adayı, takvim bildirimi Haberler'i gösterir. Bunun için uygulama güncellemesi gerekir.",
+          "title_en": "Notifications open the right page",
+          "text_en": "Tapping a phone notification now opens the related place instead of the main screen: a position alert shows that position, a radar alert shows that candidate, a calendar alert shows News. This needs the app update.",
+          "admin": false
+        }
+      ]
+    },
     {
       "version": "2.7.6",
       "date": "2026-10-31",
@@ -113,39 +156,24 @@
           "admin": true
         }
       ]
-    },
-    {
-      "version": "2.7.1",
-      "date": "2026-10-31",
-      "title": "Telefonda düzenli üst çubuk",
-      "title_en": "Tidy top bar on phones",
-      "items": [
-        {
-          "title": "Üst üste binen yazılar",
-          "text": "Güncelleme etiketi telefonda üst çubuktaki düğmelerin üstüne biniyordu; artık altında ayrı şeritte duruyor. Maskot büyüdü ve ortaya geçti.",
-          "title_en": "Overlapping labels",
-          "text_en": "The update label overlapped the top bar buttons on phones; it now sits on its own strip below. The mascot is bigger and centered.",
-          "admin": false
-        }
-      ]
     }
   ],
   "windows": {
-    "version": "2.7.6",
-    "url": "https://github.com/syhnist/rositradebot/releases/download/v2.7.6/RosiTradeBot-Setup-2.7.6.exe",
-    "sha256": "1e31fb76604b2c5f1cfb5b45aefc8e4baee78f6f2d350c447d0815dbe4efd574",
+    "version": "2.8.0",
+    "url": "https://github.com/syhnist/rositradebot/releases/download/v2.8.0/RosiTradeBot-Setup-2.8.0.exe",
+    "sha256": "e8e0dc640875082ed446d479957a4ae0db367fe84280dfcc99e51cf2fe78c530",
     "page": "https://syhnist.github.io/rositradebot/#windows"
   },
   "linux": {
-    "version": "2.7.6",
-    "url": "https://github.com/syhnist/rositradebot/releases/download/v2.7.6/RosiTradeBot-linux-2.7.6.tar.gz",
-    "sha256": "4c21cc4b65a3a8c62b9fb6330c23f579c9df69986ee9b5a06d196e222da46080",
+    "version": "2.8.0",
+    "url": "https://github.com/syhnist/rositradebot/releases/download/v2.8.0/RosiTradeBot-linux-2.8.0.tar.gz",
+    "sha256": "8ae75d859fb892b1d8f1a691ec04f2ac5dab35c64be4a9a7857a28a838333cdd",
     "page": "https://syhnist.github.io/rositradebot/#linux"
   },
   "android": {
-    "version": "2.7.0",
-    "url": "https://github.com/syhnist/rositradebot/releases/download/v2.7.0/RosiTradeBot-android-2.7.0.apk",
-    "sha256": "0c7172ed95ee220cfca8fcd22441a1f67757a9fab227137e54a2341652472a2d",
+    "version": "2.8.0",
+    "url": "https://github.com/syhnist/rositradebot/releases/download/v2.8.0/RosiTradeBot-android-2.8.0.apk",
+    "sha256": "83733eeff519738b1143504c72301ade1f900985be8cff76fdeadc5ee3e92b96",
     "page": "https://syhnist.github.io/rositradebot/#android"
   }
 }
