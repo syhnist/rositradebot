@@ -1,9 +1,24 @@
 {
-  "version": "2.8.10",
+  "version": "2.8.11",
   "date": "2026-11-01",
-  "releases": "https://github.com/syhnist/rositradebot/releases/tag/v2.8.10",
+  "releases": "https://github.com/syhnist/rositradebot/releases/tag/v2.8.11",
   "revoked": [],
   "notes": [
+    {
+      "version": "2.8.11",
+      "date": "2026-11-01",
+      "title": "Tüm işlemler kademeli",
+      "title_en": "All trades use the ladder",
+      "items": [
+        {
+          "title": "Radar ve Dalga işlemleri de kademeli",
+          "text": "Nereden açılırsa açılsın tüm işlemler aynı yönetilir: kademeli SL/TP, kısmi kâr ve Çevrimdışı Kalkan. Açık Radar ve Dalga pozisyonları da kademeye geçer.",
+          "title_en": "Radar and Wave trades use the ladder too",
+          "text_en": "Wherever a trade opens from, it is managed the same way: laddered SL/TP, partial profit and Offline Shield. Open Radar and Wave positions move to the ladder too.",
+          "admin": false
+        }
+      ]
+    },
     {
       "version": "2.8.10",
       "date": "2026-11-01",
@@ -113,47 +128,18 @@
           "admin": false
         }
       ]
-    },
-    {
-      "version": "2.8.5",
-      "date": "2026-11-01",
-      "title": "Telefonda hızlı geçiş düğmeleri",
-      "title_en": "Quick jump buttons on phones",
-      "items": [
-        {
-          "title": "Hızlı geçiş",
-          "text": "Telefonda Toplam Varlık kartının sağında Pozisyon, Tarama, Dalga, Radar, Nabız ve Risk düğmeleri var. Dokununca ana ekran o bölüme kayar.",
-          "title_en": "Quick jump",
-          "text_en": "On phones, the right side of the Total Equity card has Position, Scan, Wave, Radar, Pulse and Risk buttons. Tap one and the main screen scrolls to that section.",
-          "admin": false
-        },
-        {
-          "title": "Daha hızlı açılış",
-          "text": "İlk açılışta inen veri yarıdan fazla azaldı, dosyalar telefonda önbellekte kalıyor, hız haritası daha az pil harcıyor, sayfa arka plandayken gereksiz istek gitmiyor. Canlı Tarama ve haritadaki soluk mavi dokunma katmanı da kaldırıldı.",
-          "title_en": "Faster loading",
-          "text_en": "The first download shrank by more than half, files stay cached on the phone, the speed map uses less battery, and no needless requests go out while the page is in the background. The pale blue tap layer on Live Scan and the map is gone too.",
-          "admin": false
-        },
-        {
-          "title": "Basılı tutma menüsü kapatıldı",
-          "text": "Telefonda yazıya basılı tutunca kopyala/kes menüsü çıkmaz. Yazı girilen alanlar ve kopyalanacak kodlar seçilebilir kalır.",
-          "title_en": "Long-press menu disabled",
-          "text_en": "Long-pressing text on a phone no longer opens the copy/cut menu. Input fields and codes to copy stay selectable.",
-          "admin": false
-        }
-      ]
     }
   ],
   "windows": {
-    "version": "2.8.10",
-    "url": "https://github.com/syhnist/rositradebot/releases/download/v2.8.10/RosiTradeBot-Setup-2.8.10.exe",
-    "sha256": "0c0f10c2ae202f3143e01c4f37710a4eace28799bec754eaa7e6a9f9b048aeb6",
+    "version": "2.8.11",
+    "url": "https://github.com/syhnist/rositradebot/releases/download/v2.8.11/RosiTradeBot-Setup-2.8.11.exe",
+    "sha256": "69c48e55a8a9e49771a4e38ba4d5a36b8e12ec2ca56fecc570f2fc91429cff6c",
     "page": "https://syhnist.github.io/rositradebot/#windows"
   },
   "linux": {
-    "version": "2.8.10",
-    "url": "https://github.com/syhnist/rositradebot/releases/download/v2.8.10/RosiTradeBot-linux-2.8.10.tar.gz",
-    "sha256": "6bb0d4c6b68147a74e6e96a08670d40201b66d17ce0c610667330a50c77e3c6e",
+    "version": "2.8.11",
+    "url": "https://github.com/syhnist/rositradebot/releases/download/v2.8.11/RosiTradeBot-linux-2.8.11.tar.gz",
+    "sha256": "3c0e4655dc7d5d0aec1060579515eb8ef97d58956ef9754b8ea96323a9c30471",
     "page": "https://syhnist.github.io/rositradebot/#linux"
   },
   "android": {
