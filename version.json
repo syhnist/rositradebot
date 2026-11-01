@@ -1,9 +1,45 @@
 {
-  "version": "2.8.5",
+  "version": "2.8.6",
   "date": "2026-11-01",
-  "releases": "https://github.com/syhnist/rositradebot/releases/tag/v2.8.5",
+  "releases": "https://github.com/syhnist/rositradebot/releases/tag/v2.8.6",
   "revoked": [],
   "notes": [
+    {
+      "version": "2.8.6",
+      "date": "2026-11-01",
+      "title": "Daha hızlı sinyal, daha akıcı telefon",
+      "title_en": "Faster signals, smoother phone",
+      "items": [
+        {
+          "title": "Sinyal gecikmesi azaldı",
+          "text": "Dalga Avcısı artık dakikada bir değil 15 saniyede bir bakıyor. Ani hareketlerde hacim 3 dakikalık pencereden ölçülüyor, sinyal hareketin başında geliyor.",
+          "title_en": "Less signal delay",
+          "text_en": "Wave Hunter now checks every 15 seconds instead of every minute. On sudden moves, volume is read from a 3-minute window, so the signal arrives at the start of the move.",
+          "admin": false
+        },
+        {
+          "title": "İşlem neden açılmadı?",
+          "text": "Sinyal listesinde ve Telegram mesajında işlemin açılıp açılmadığı, açılmadıysa nedeni yazıyor: hacim, spread, günlük sınır ya da geç kalınması.",
+          "title_en": "Why didn't a trade open?",
+          "text_en": "The signal list and Telegram message now say whether a trade opened and, if not, why: volume, spread, the daily limit or being too late.",
+          "admin": false
+        },
+        {
+          "title": "Dalga için ayrı spread sınırı",
+          "text": "Coin hareketlenirken alış-satış farkı açılır. Dalga işlemleri için sınır %0,4 ve ayarlardan değiştirilebilir. 15 dakikada %15'ten fazla yükselmiş coine geç kalındığı için işlem açılmaz.",
+          "title_en": "Separate spread limit for Wave",
+          "text_en": "The bid-ask spread widens when a coin moves. The limit for Wave trades is 0.4% and can be changed in settings. No trade opens on a coin already up more than 15% in 15 minutes, since that is too late.",
+          "admin": false
+        },
+        {
+          "title": "Telefonda akıcılık",
+          "text": "Ana ekran gereksiz yere yeniden çizilmiyor, sayaç animasyonları ve pahalı efektler telefonda kapalı, canlı çizimler saniyede 30 kareyle sınırlı.",
+          "title_en": "Smoother on phones",
+          "text_en": "The main screen no longer redraws needlessly, counter animations and expensive effects are off on phones, and live drawings are capped at 30 frames per second.",
+          "admin": false
+        }
+      ]
+    },
     {
       "version": "2.8.5",
       "date": "2026-11-01",
@@ -127,61 +163,18 @@
           "admin": false
         }
       ]
-    },
-    {
-      "version": "2.8.0",
-      "date": "2026-11-01",
-      "title": "Dalga Avcısı, anlık coin takibi ve grafikli Telegram",
-      "title_en": "Wave Hunter, live coin tracking and Telegram charts",
-      "items": [
-        {
-          "title": "Dalga Avcısı",
-          "text": "8 şarttan bağımsız yeni sinyal sistemi. Coinler canlı bir dalganın üstünde beş evrede görünür: Birikim, Kabarma, Dalga, Köpük, Çekilme. Tarama ışığı dalgayı süpürür, yeni sinyal halka halka yayılır.",
-          "title_en": "Wave Hunter",
-          "text_en": "A new signal system, separate from the 8 conditions. Coins float on a live wave in five phases: Accumulation, Swell, Wave, Foam, Pullback. A scan beam sweeps the wave and new signals ripple out.",
-          "admin": false
-        },
-        {
-          "title": "Anlık coin takibi",
-          "text": "24 saatlik hacmi 2 milyon doları geçen tüm coinler dakikada bir izlenir. Sessiz coin aniden canlanırsa Uyanış sinyali gelir. İşlem açma kapalı, onaylı ya da küçük riskle otomatik seçilebilir; varsayılan onaylıdır.",
-          "title_en": "Live coin tracking",
-          "text_en": "Every coin above 2 million dollars of 24h volume is watched each minute. When a quiet coin suddenly wakes up you get an Awakening signal. Trading can be off, confirmed or automatic with small risk; the default is confirmed.",
-          "admin": false
-        },
-        {
-          "title": "Grafikli Telegram",
-          "text": "Pozisyon ve Dalga bildirimleri mum grafiğiyle gelir. Panele götüren düğme, /dalga, /grafik BTC ve /sessiz komutları eklendi. Pozisyon listesinde her coinin grafiği tek dokunuşla açılır.",
-          "title_en": "Telegram charts",
-          "text_en": "Position and Wave alerts now arrive with a candle chart. Added a button to the panel and the /dalga, /grafik BTC and /sessiz commands. Each coin's chart opens with one tap from the positions list.",
-          "admin": true
-        },
-        {
-          "title": "Ana ekranda Hareket Radarı",
-          "text": "Son 24 saatin radar kayıtları artık ana ekranda. Uygun adayda İşlem aç düğmesi buradan da kullanılır; Tümü bağlantısı radar sayfasını açar. Kartın yeri Düzenle ile değiştirilir.",
-          "title_en": "Move Radar on the main screen",
-          "text_en": "The last 24 hours of radar records are now on the main screen. The Open trade button works here too on suitable candidates, and the All link opens the radar page. Move the card with Edit.",
-          "admin": false
-        },
-        {
-          "title": "Bildirim doğru sayfayı açar",
-          "text": "Telefonda bildirime dokununca ana ekran yerine ilgili yer açılır: pozisyon bildirimi o pozisyonu, radar bildirimi o adayı, takvim bildirimi Haberler'i gösterir. Bunun için uygulama güncellemesi gerekir.",
-          "title_en": "Notifications open the right page",
-          "text_en": "Tapping a phone notification now opens the related place instead of the main screen: a position alert shows that position, a radar alert shows that candidate, a calendar alert shows News. This needs the app update.",
-          "admin": false
-        }
-      ]
     }
   ],
   "windows": {
-    "version": "2.8.5",
-    "url": "https://github.com/syhnist/rositradebot/releases/download/v2.8.5/RosiTradeBot-Setup-2.8.5.exe",
-    "sha256": "41e89b4f198b86de50ebe77cb2c467cb7acfb0648b9a1941948d2a86cfcbc87e",
+    "version": "2.8.6",
+    "url": "https://github.com/syhnist/rositradebot/releases/download/v2.8.6/RosiTradeBot-Setup-2.8.6.exe",
+    "sha256": "177f99e16ca186178af60da8660e2c2475f944bb35579181029302de94c2c416",
     "page": "https://syhnist.github.io/rositradebot/#windows"
   },
   "linux": {
-    "version": "2.8.5",
-    "url": "https://github.com/syhnist/rositradebot/releases/download/v2.8.5/RosiTradeBot-linux-2.8.5.tar.gz",
-    "sha256": "d062c3ff75bcf8bc8bc6cf9c0b823a3dde67efeb2eacfe3860ab219e32d7460d",
+    "version": "2.8.6",
+    "url": "https://github.com/syhnist/rositradebot/releases/download/v2.8.6/RosiTradeBot-linux-2.8.6.tar.gz",
+    "sha256": "020864dbe27f16f828d3e090451b61c33b3dc586b817d196e244eea4f9dfd1d8",
     "page": "https://syhnist.github.io/rositradebot/#linux"
   },
   "android": {
