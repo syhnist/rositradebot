@@ -1,9 +1,24 @@
 {
-  "version": "2.8.11",
-  "date": "2026-11-01",
-  "releases": "https://github.com/syhnist/rositradebot/releases/tag/v2.8.11",
+  "version": "2.8.12",
+  "date": "2026-11-02",
+  "releases": "https://github.com/syhnist/rositradebot/releases/tag/v2.8.12",
   "revoked": [],
   "notes": [
+    {
+      "version": "2.8.12",
+      "date": "2026-11-02",
+      "title": "Hakkımızda sayfası",
+      "title_en": "About page",
+      "items": [
+        {
+          "title": "Hakkımızda",
+          "text": "Projenin amacı, bugüne kadar yapılanlar, geliştirme işbirliği ve hak bilgisi menüde Ayarlar ve yardım altında.",
+          "title_en": "About",
+          "text_en": "The project's purpose, what has been built, the development collaboration and rights information are in the menu under Settings and help.",
+          "admin": false
+        }
+      ]
+    },
     {
       "version": "2.8.11",
       "date": "2026-11-01",
@@ -92,54 +107,18 @@
           "admin": false
         }
       ]
-    },
-    {
-      "version": "2.8.6",
-      "date": "2026-11-01",
-      "title": "Daha hızlı sinyal, daha akıcı telefon",
-      "title_en": "Faster signals, smoother phone",
-      "items": [
-        {
-          "title": "Sinyal gecikmesi azaldı",
-          "text": "Dalga Avcısı artık dakikada bir değil 15 saniyede bir bakıyor. Ani hareketlerde hacim 3 dakikalık pencereden ölçülüyor, sinyal hareketin başında geliyor.",
-          "title_en": "Less signal delay",
-          "text_en": "Wave Hunter now checks every 15 seconds instead of every minute. On sudden moves, volume is read from a 3-minute window, so the signal arrives at the start of the move.",
-          "admin": false
-        },
-        {
-          "title": "İşlem neden açılmadı?",
-          "text": "Sinyal listesinde ve Telegram mesajında işlemin açılıp açılmadığı, açılmadıysa nedeni yazıyor: hacim, spread, günlük sınır ya da geç kalınması.",
-          "title_en": "Why didn't a trade open?",
-          "text_en": "The signal list and Telegram message now say whether a trade opened and, if not, why: volume, spread, the daily limit or being too late.",
-          "admin": false
-        },
-        {
-          "title": "Dalga için ayrı spread sınırı",
-          "text": "Coin hareketlenirken alış-satış farkı açılır. Dalga işlemleri için sınır %0,4 ve ayarlardan değiştirilebilir. 15 dakikada %15'ten fazla yükselmiş coine geç kalındığı için işlem açılmaz.",
-          "title_en": "Separate spread limit for Wave",
-          "text_en": "The bid-ask spread widens when a coin moves. The limit for Wave trades is 0.4% and can be changed in settings. No trade opens on a coin already up more than 15% in 15 minutes, since that is too late.",
-          "admin": false
-        },
-        {
-          "title": "Telefonda akıcılık",
-          "text": "Ana ekran gereksiz yere yeniden çizilmiyor, sayaç animasyonları ve pahalı efektler telefonda kapalı, canlı çizimler saniyede 30 kareyle sınırlı.",
-          "title_en": "Smoother on phones",
-          "text_en": "The main screen no longer redraws needlessly, counter animations and expensive effects are off on phones, and live drawings are capped at 30 frames per second.",
-          "admin": false
-        }
-      ]
     }
   ],
   "windows": {
-    "version": "2.8.11",
-    "url": "https://github.com/syhnist/rositradebot/releases/download/v2.8.11/RosiTradeBot-Setup-2.8.11.exe",
-    "sha256": "69c48e55a8a9e49771a4e38ba4d5a36b8e12ec2ca56fecc570f2fc91429cff6c",
+    "version": "2.8.12",
+    "url": "https://github.com/syhnist/rositradebot/releases/download/v2.8.12/RosiTradeBot-Setup-2.8.12.exe",
+    "sha256": "14369833520146952a1537f363f38a541628b670cf496b4f6f6143677babcb39",
     "page": "https://syhnist.github.io/rositradebot/#windows"
   },
   "linux": {
-    "version": "2.8.11",
-    "url": "https://github.com/syhnist/rositradebot/releases/download/v2.8.11/RosiTradeBot-linux-2.8.11.tar.gz",
-    "sha256": "3c0e4655dc7d5d0aec1060579515eb8ef97d58956ef9754b8ea96323a9c30471",
+    "version": "2.8.12",
+    "url": "https://github.com/syhnist/rositradebot/releases/download/v2.8.12/RosiTradeBot-linux-2.8.12.tar.gz",
+    "sha256": "cb610168b3c03b4780885425e13511db91a863dc975652e2813d5e14f6a2cdeb",
     "page": "https://syhnist.github.io/rositradebot/#linux"
   },
   "android": {
