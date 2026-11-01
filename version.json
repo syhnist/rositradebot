@@ -1,9 +1,31 @@
 {
-  "version": "2.8.1",
+  "version": "2.8.2",
   "date": "2026-11-01",
-  "releases": "https://github.com/syhnist/rositradebot/releases/tag/v2.8.1",
+  "releases": "https://github.com/syhnist/rositradebot/releases/tag/v2.8.2",
   "revoked": [],
   "notes": [
+    {
+      "version": "2.8.2",
+      "date": "2026-11-01",
+      "title": "Telegram bildirimleri düzeltildi",
+      "title_en": "Telegram alerts fixed",
+      "items": [
+        {
+          "title": "Bildirim servisi",
+          "text": "2.8.0 ile sunucuda duran bildirim servisi yeniden çalışıyor. Grafik çizilemese bile bildirimler artık metin olarak gider. Kuyrukta eskiyen Dalga sinyalleri gönderilmez.",
+          "title_en": "Alert service",
+          "text_en": "The alert service that stopped on servers with 2.8.0 runs again. If a chart can't be drawn, the alert still goes out as text. Wave signals that went stale in the queue are not sent.",
+          "admin": true
+        },
+        {
+          "title": "Telegram sayfası telefonda",
+          "text": "Bağlantı durumundaki değerler telefonda kesilmiyor.",
+          "title_en": "Telegram page on phones",
+          "text_en": "Connection status values are no longer cut off on phones.",
+          "admin": true
+        }
+      ]
+    },
     {
       "version": "2.8.1",
       "date": "2026-11-01",
@@ -141,33 +163,18 @@
           "admin": true
         }
       ]
-    },
-    {
-      "version": "2.7.3",
-      "date": "2026-10-31",
-      "title": "Maskotun bacakları çıktı",
-      "title_en": "The mascot grew legs",
-      "items": [
-        {
-          "title": "Daha canlı maskot",
-          "text": "Robot ara sıra bacaklarını çıkarıp yürüyor, zıplıyor ve anten sallıyor. Kârda dans ediyor, hatada ayak vuruyor, uyurken z çıkarıyor. Her hareketin kendi sesi var; kendi kendine yaptıklarında ses kısık.",
-          "title_en": "A livelier mascot",
-          "text_en": "The robot now pops out its legs to walk, jump and wiggle its antenna. It dances on profit, stomps on errors and shows a z while asleep. Each move has its own sound, quieter when it does them on its own.",
-          "admin": false
-        }
-      ]
     }
   ],
   "windows": {
-    "version": "2.8.1",
-    "url": "https://github.com/syhnist/rositradebot/releases/download/v2.8.1/RosiTradeBot-Setup-2.8.1.exe",
-    "sha256": "39af717987b92314654d24dc99286ee961cec7476a2e3b1d28453d89f051de67",
+    "version": "2.8.2",
+    "url": "https://github.com/syhnist/rositradebot/releases/download/v2.8.2/RosiTradeBot-Setup-2.8.2.exe",
+    "sha256": "7fb64d4b950748ce91466dd4f3286d276f9bb8643ef6e2268bbaceecd267e68d",
     "page": "https://syhnist.github.io/rositradebot/#windows"
   },
   "linux": {
-    "version": "2.8.1",
-    "url": "https://github.com/syhnist/rositradebot/releases/download/v2.8.1/RosiTradeBot-linux-2.8.1.tar.gz",
-    "sha256": "ce970e8dc84c37b19b2af5f893f50703397c112760dfc401269a6ffd984d2814",
+    "version": "2.8.2",
+    "url": "https://github.com/syhnist/rositradebot/releases/download/v2.8.2/RosiTradeBot-linux-2.8.2.tar.gz",
+    "sha256": "b708c6754c476c8a16c9bf730cd4ab19dcd4c1a3645970753f8872d1d3fec1db",
     "page": "https://syhnist.github.io/rositradebot/#linux"
   },
   "android": {
