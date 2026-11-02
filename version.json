@@ -1,9 +1,38 @@
 {
-  "version": "2.8.12",
+  "version": "2.8.13",
   "date": "2026-11-02",
-  "releases": "https://github.com/syhnist/rositradebot/releases/tag/v2.8.12",
+  "releases": "https://github.com/syhnist/rositradebot/releases/tag/v2.8.13",
   "revoked": [],
   "notes": [
+    {
+      "version": "2.8.13",
+      "date": "2026-11-02",
+      "title": "Doğru kapanış kayıtları, işlem başı zarar sınırı, Beni hatırla",
+      "title_en": "Correct close records, per-trade loss cap, Remember me",
+      "items": [
+        {
+          "title": "Kısmi kapanışlı işlemlerin kâr/zararı",
+          "text": "Kısmi kâr alınmış ya da elle azaltılmış bir pozisyon borsada stop olunca önceki kısmi satışlar kapanışa tekrar ekleniyordu: kâr/zarar ve komisyon iki kez sayılıyor, stop çıkışları “Kalkan” görünüyordu. Düzeltildi; eski kayıtlar da güncellendi. Borsadaki bakiyeniz bundan etkilenmemişti, yalnızca bottaki istatistikler yanlıştı.",
+          "title_en": "P/L of trades with partial closes",
+          "text_en": "When a position with a partial take-profit or a manual reduce hit its stop on the exchange, the earlier partial sells were added to the close again: P/L and fees were counted twice and stop exits showed as “Shield”. Fixed, and old records were corrected. Your exchange balance was never affected; only the bot's statistics were wrong.",
+          "admin": false
+        },
+        {
+          "title": "Tek işlemde en fazla zarar",
+          "text": "Stop olunca bir işlemde en fazla kaç USDT kaybedileceğini belirleyin; Dalga ve Radar dahil. Pozisyon baştan küçük açılır, stop yeri değişmez. Stopu ya da pozisyonu her seferinde elle küçültmenize gerek kalmaz.",
+          "title_en": "Max loss per trade",
+          "text_en": "Set the most USDT one trade can lose when its stop hits, Wave and Radar included. The position opens smaller from the start and the stop stays where it is. No need to shrink the stop or the position by hand every time.",
+          "admin": true
+        },
+        {
+          "title": "Beni hatırla ve Şifremi unuttum",
+          "text": "Giriş ekranında “Beni hatırla” seçilirse bu cihazda 30 gün oturum açık kalır ve kullanıcı adı hatırlanır. Parolanızı unutursanız Telegram'a bağlı hesaba 6 haneli kod gönderilir ve yeni parola belirlenir.",
+          "title_en": "Remember me and Forgot password",
+          "text_en": "If you tick “Remember me” on the sign-in screen, you stay signed in on that device for 30 days and the username is remembered. If you forget your password, a 6-digit code is sent to the account's linked Telegram and you can set a new one.",
+          "admin": false
+        }
+      ]
+    },
     {
       "version": "2.8.12",
       "date": "2026-11-02",
@@ -85,40 +114,18 @@
           "admin": false
         }
       ]
-    },
-    {
-      "version": "2.8.7",
-      "date": "2026-11-01",
-      "title": "Dalga işlemlerinde teminat, kaldıraç ve SL/TP senin elinde",
-      "title_en": "You set margin, leverage and SL/TP for Wave trades",
-      "items": [
-        {
-          "title": "Dalga ayarları Risk & Strateji'de",
-          "text": "Günde kaç işlemin onaysız açılacağı, işlem başına teminat, otomatik ya da elle kaldıraç, stop ve hedef yüzdesi ayrı ayrı girilir. Sınır dolunca sonraki sinyaller onayını bekler.",
-          "title_en": "Wave settings in Risk & Strategy",
-          "text_en": "Set how many trades open without confirmation each day, the margin per trade, automatic or manual leverage, and the stop and target percentages. Once the limit is reached, later signals wait for your confirmation.",
-          "admin": false
-        },
-        {
-          "title": "Dar stop ve gerçek hedef",
-          "text": "Dalga işlemleri varsayılan olarak %3 stop ve %12 hedefle açılır. Kâr stopun iki katına gelince stop izlemeye başlar. Karne de aynı değerlerle puanlar.",
-          "title_en": "Tight stop and a real target",
-          "text_en": "Wave trades open with a 3% stop and 12% target by default. When profit reaches twice the stop, the stop starts trailing. The scorecard uses the same values.",
-          "admin": false
-        }
-      ]
     }
   ],
   "windows": {
-    "version": "2.8.12",
-    "url": "https://github.com/syhnist/rositradebot/releases/download/v2.8.12/RosiTradeBot-Setup-2.8.12.exe",
-    "sha256": "14369833520146952a1537f363f38a541628b670cf496b4f6f6143677babcb39",
+    "version": "2.8.13",
+    "url": "https://github.com/syhnist/rositradebot/releases/download/v2.8.13/RosiTradeBot-Setup-2.8.13.exe",
+    "sha256": "98c2ac1bf4830eece235ac6c6209f8d93b1f7e8535b068e1b62953c66baf99a2",
     "page": "https://syhnist.github.io/rositradebot/#windows"
   },
   "linux": {
-    "version": "2.8.12",
-    "url": "https://github.com/syhnist/rositradebot/releases/download/v2.8.12/RosiTradeBot-linux-2.8.12.tar.gz",
-    "sha256": "cb610168b3c03b4780885425e13511db91a863dc975652e2813d5e14f6a2cdeb",
+    "version": "2.8.13",
+    "url": "https://github.com/syhnist/rositradebot/releases/download/v2.8.13/RosiTradeBot-linux-2.8.13.tar.gz",
+    "sha256": "65f2330a5dae010e7b9b055f52043ab6bb69e3a56b1d30b37f6dc77d5036bb77",
     "page": "https://syhnist.github.io/rositradebot/#linux"
   },
   "android": {
