@@ -1,9 +1,24 @@
 {
-  "version": "2.8.14",
+  "version": "2.8.15",
   "date": "2026-11-02",
-  "releases": "https://github.com/syhnist/rositradebot/releases/tag/v2.8.14",
+  "releases": "https://github.com/syhnist/rositradebot/releases/tag/v2.8.15",
   "revoked": [],
   "notes": [
+    {
+      "version": "2.8.15",
+      "date": "2026-11-02",
+      "title": "Yeni önerilen paket: Sabırlı Swing",
+      "title_en": "New recommended package: Patient Swing",
+      "items": [
+        {
+          "title": "Sabırlı Swing",
+          "text": "Canlı işlemlerin incelemesinden sonra hazırlandı: 2 saatlik trend + 30 dakikalık giriş, geniş stop (3 × ATR) ve fiyat 1R ilerleyince pozisyonun yarısı kâra alınır. Testte işlemlerin yaklaşık %63'ü başa baş ya da kârla kapandı, en büyük düşüş %9; 120, 180, 240 ve 365 günlük dönemlerin hepsinde artıda. Kayıp tutarı işlem başı risk ayarıyla aynı kalır, sadece erken stoplar azalır. Paket ayarlardan tek tıkla uygulanır.",
+          "title_en": "Patient Swing",
+          "text_en": "Built after reviewing the live trades: 2-hour trend + 30-minute entry, a wide stop (3 × ATR), and half the position is closed in profit once price moves 1R. In the test about 63% of trades closed at breakeven or in profit, with a 9% maximum drawdown; positive in every period of 120, 180, 240 and 365 days. The loss amount stays set by your per-trade risk; only early stop-outs drop. Apply the package from settings with one click.",
+          "admin": true
+        }
+      ]
+    },
     {
       "version": "2.8.14",
       "date": "2026-11-02",
@@ -92,40 +107,18 @@
           "admin": false
         }
       ]
-    },
-    {
-      "version": "2.8.9",
-      "date": "2026-11-01",
-      "title": "Radar işlemlerinde teminat düzeltmesi",
-      "title_en": "Margin fix for Radar trades",
-      "items": [
-        {
-          "title": "Radar işlemi senin teminatınla açılır",
-          "text": "Hareket Radarı'ndan açılan işlemler genel risk ayarıyla boyutlanıyordu ve çok büyük olabiliyordu. Artık Dalga Avcısı'ndaki teminat ve kaldıraç ayarını kullanır.",
-          "title_en": "Radar trades use your margin",
-          "text_en": "Trades opened from Move Radar were sized by the general risk setting and could be very large. They now use the margin and leverage set under Wave Hunter.",
-          "admin": false
-        },
-        {
-          "title": "Onay penceresinde tutarlar",
-          "text": "İşlem aç penceresi teminatı, kaldıracı, pozisyon büyüklüğünü ve stopta oluşacak zararı onaydan önce gösterir.",
-          "title_en": "Amounts in the confirmation window",
-          "text_en": "The Open trade window shows margin, leverage, position size and the loss at the stop before you confirm.",
-          "admin": false
-        }
-      ]
     }
   ],
   "windows": {
-    "version": "2.8.14",
-    "url": "https://github.com/syhnist/rositradebot/releases/download/v2.8.14/RosiTradeBot-Setup-2.8.14.exe",
-    "sha256": "98769cd1565cec1c57f520a0f569bd92924a4f235608ebd4f7b2e923f170c3f4",
+    "version": "2.8.15",
+    "url": "https://github.com/syhnist/rositradebot/releases/download/v2.8.15/RosiTradeBot-Setup-2.8.15.exe",
+    "sha256": "fbe8df25cd32bacb68a467a09c313da60cc95ab518edb700447811696bb70c79",
     "page": "https://syhnist.github.io/rositradebot/#windows"
   },
   "linux": {
-    "version": "2.8.14",
-    "url": "https://github.com/syhnist/rositradebot/releases/download/v2.8.14/RosiTradeBot-linux-2.8.14.tar.gz",
-    "sha256": "afdcdfd5d23cecc6ca086b1923b25350b11d99202476e6bda9031555851711e6",
+    "version": "2.8.15",
+    "url": "https://github.com/syhnist/rositradebot/releases/download/v2.8.15/RosiTradeBot-linux-2.8.15.tar.gz",
+    "sha256": "12c631169049352d54a0b1c456c4d2e815e791e9370d77ce6c9e1939fec6bb50",
     "page": "https://syhnist.github.io/rositradebot/#linux"
   },
   "android": {
