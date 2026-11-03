@@ -1,9 +1,24 @@
 {
-  "version": "2.9.3",
+  "version": "2.9.4",
   "date": "2026-11-03",
-  "releases": "https://github.com/syhnist/rositradebot/releases/tag/v2.9.3",
+  "releases": "https://github.com/syhnist/rositradebot/releases/tag/v2.9.4",
   "revoked": [],
   "notes": [
+    {
+      "version": "2.9.4",
+      "date": "2026-11-03",
+      "title": "Misafir botlar daha sade",
+      "title_en": "Simpler guest bots",
+      "items": [
+        {
+          "title": "Misafirde kapalı özellikler",
+          "text": "Arkadaş (misafir) botları artık sunucu sahibinin panelinin birebir kopyası değil: asistan, Telegram bağlantısı, uzaktan erişim, kullanıcılar ve davet, kayıt, abonelik ve kaynak ayarları misafirde kapalı. Bunlar yalnızca menüden gizlenmiyor, sunucuda da kilitli. Misafir bildirimleri Android uygulamasından alır.",
+          "title_en": "Features off for guests",
+          "text_en": "Friend (guest) bots are no longer an exact copy of the owner's panel: the assistant, Telegram connection, remote access, users and invites, sign-up, subscription and resource settings are off for guests. They're not just hidden from the menu but locked on the server too. Guests get notifications through the Android app.",
+          "admin": true
+        }
+      ]
+    },
     {
       "version": "2.9.3",
       "date": "2026-11-03",
@@ -155,33 +170,18 @@
           "admin": true
         }
       ]
-    },
-    {
-      "version": "2.8.14",
-      "date": "2026-11-02",
-      "title": "Yerinde sayan işlemde stopu daralt",
-      "title_en": "Tighten the stop on stalled trades",
-      "items": [
-        {
-          "title": "Yerinde sayan işlem",
-          "text": "Stopu elle girişe yaklaştırmanın otomatiği: işlem açıldıktan birkaç mum sonra hâlâ ilerlemediyse stop bir kez girişe yaklaştırılır. Sakin Swing'de 4 mum ve 0,3R ayarı 120–365 günlük dört dönemin hepsinde sonucu iyileştirdi; 15 dakikalık agresif ayarda işe yaramadı. Varsayılan kapalı, Risk & Strateji'den açılır.",
-          "title_en": "Stalled trade",
-          "text_en": "The automatic version of moving the stop closer to the entry by hand: if a trade still hasn't moved a few candles after opening, the stop is moved closer to the entry once. On Calm Swing, 4 candles and 0.3R improved the result in all four test periods from 120 to 365 days; on the aggressive 15-minute setup it didn't help. Off by default; turn it on in Risk & Strategy.",
-          "admin": true
-        }
-      ]
     }
   ],
   "windows": {
-    "version": "2.9.3",
-    "url": "https://github.com/syhnist/rositradebot/releases/download/v2.9.3/RosiTradeBot-Setup-2.9.3.exe",
-    "sha256": "eb3cd37a5391e13d475c46652c431c5ecb3ea0890184f28b3568c712475149ae",
+    "version": "2.9.4",
+    "url": "https://github.com/syhnist/rositradebot/releases/download/v2.9.4/RosiTradeBot-Setup-2.9.4.exe",
+    "sha256": "59ce9f17ccde2ae98cd4d82cb722a6dc7272ee918ff2c80eeefc201276b0b354",
     "page": "https://syhnist.github.io/rositradebot/#windows"
   },
   "linux": {
-    "version": "2.9.3",
-    "url": "https://github.com/syhnist/rositradebot/releases/download/v2.9.3/RosiTradeBot-linux-2.9.3.tar.gz",
-    "sha256": "1f45dbf31d92a8f7dfbf21eb8aa6f222e67418857fed410b3153c3fadabb7fbc",
+    "version": "2.9.4",
+    "url": "https://github.com/syhnist/rositradebot/releases/download/v2.9.4/RosiTradeBot-linux-2.9.4.tar.gz",
+    "sha256": "e0ee304931de07012825ad2735bfeb8a2538809d525fc6fdb8c882b7a2445cbc",
     "page": "https://syhnist.github.io/rositradebot/#linux"
   },
   "android": {
