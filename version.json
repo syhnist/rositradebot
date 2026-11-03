@@ -1,9 +1,31 @@
 {
-  "version": "2.9.4",
+  "version": "2.9.5",
   "date": "2026-11-03",
-  "releases": "https://github.com/syhnist/rositradebot/releases/tag/v2.9.4",
+  "releases": "https://github.com/syhnist/rositradebot/releases/tag/v2.9.5",
   "revoked": [],
   "notes": [
+    {
+      "version": "2.9.5",
+      "date": "2026-11-03",
+      "title": "Telegram /dalga ve güncelleme denetimi",
+      "title_en": "Telegram /dalga and update check",
+      "items": [
+        {
+          "title": "/dalga komutu hata vermiyor",
+          "text": "Telegram'da /dalga (ve 🌊 Dalga düğmesi) \"Komut işlenirken hata oluştu\" diyordu: son sinyaller listesine yalnızca öğrenme için tutulan sessiz gözlem kayıtları da giriyordu. Artık listede yalnızca gerçek sinyaller görünür.",
+          "title_en": "/dalga command no longer fails",
+          "text_en": "In Telegram, /dalga (and the 🌊 Dalga button) answered \"An error occurred while processing the command\": the recent signals list also picked up silent observation records kept only for learning. Now only real signals are listed.",
+          "admin": false
+        },
+        {
+          "title": "Yeni sürüm hemen görünür",
+          "text": "Güncelleme denetimi indirme sitesinin önbelleğini atlar: yeni sürüm yayınlandıktan sonra sunucu ve uygulama \"zaten güncel\" deyip eski sürümde kalmaz.",
+          "title_en": "New versions show up right away",
+          "text_en": "The update check bypasses the download site's cache: after a new version is published, the server and app no longer say \"already up to date\" and stay on the old version.",
+          "admin": false
+        }
+      ]
+    },
     {
       "version": "2.9.4",
       "date": "2026-11-03",
@@ -155,33 +177,18 @@
           "admin": false
         }
       ]
-    },
-    {
-      "version": "2.8.15",
-      "date": "2026-11-02",
-      "title": "Yeni önerilen paket: Sabırlı Swing",
-      "title_en": "New recommended package: Patient Swing",
-      "items": [
-        {
-          "title": "Sabırlı Swing",
-          "text": "Canlı işlemlerin incelemesinden sonra hazırlandı: 2 saatlik trend + 30 dakikalık giriş, geniş stop (3 × ATR) ve fiyat 1R ilerleyince pozisyonun yarısı kâra alınır. Testte işlemlerin yaklaşık %63'ü başa baş ya da kârla kapandı, en büyük düşüş %9; 120, 180, 240 ve 365 günlük dönemlerin hepsinde artıda. Kayıp tutarı işlem başı risk ayarıyla aynı kalır, sadece erken stoplar azalır. Paket ayarlardan tek tıkla uygulanır.",
-          "title_en": "Patient Swing",
-          "text_en": "Built after reviewing the live trades: 2-hour trend + 30-minute entry, a wide stop (3 × ATR), and half the position is closed in profit once price moves 1R. In the test about 63% of trades closed at breakeven or in profit, with a 9% maximum drawdown; positive in every period of 120, 180, 240 and 365 days. The loss amount stays set by your per-trade risk; only early stop-outs drop. Apply the package from settings with one click.",
-          "admin": true
-        }
-      ]
     }
   ],
   "windows": {
-    "version": "2.9.4",
-    "url": "https://github.com/syhnist/rositradebot/releases/download/v2.9.4/RosiTradeBot-Setup-2.9.4.exe",
-    "sha256": "59ce9f17ccde2ae98cd4d82cb722a6dc7272ee918ff2c80eeefc201276b0b354",
+    "version": "2.9.5",
+    "url": "https://github.com/syhnist/rositradebot/releases/download/v2.9.5/RosiTradeBot-Setup-2.9.5.exe",
+    "sha256": "9c763929ea9ab9ac491f3177c22ab55de4f1ec78cb40318e71fbc3951d7d4409",
     "page": "https://syhnist.github.io/rositradebot/#windows"
   },
   "linux": {
-    "version": "2.9.4",
-    "url": "https://github.com/syhnist/rositradebot/releases/download/v2.9.4/RosiTradeBot-linux-2.9.4.tar.gz",
-    "sha256": "e0ee304931de07012825ad2735bfeb8a2538809d525fc6fdb8c882b7a2445cbc",
+    "version": "2.9.5",
+    "url": "https://github.com/syhnist/rositradebot/releases/download/v2.9.5/RosiTradeBot-linux-2.9.5.tar.gz",
+    "sha256": "cca432573bd312e71810574e6a2d1566ffc44bf9c4a83b3a75105f72dda69cd2",
     "page": "https://syhnist.github.io/rositradebot/#linux"
   },
   "android": {
