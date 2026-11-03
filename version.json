@@ -1,9 +1,24 @@
 {
-  "version": "2.9.2",
+  "version": "2.9.3",
   "date": "2026-11-03",
-  "releases": "https://github.com/syhnist/rositradebot/releases/tag/v2.9.2",
+  "releases": "https://github.com/syhnist/rositradebot/releases/tag/v2.9.3",
   "revoked": [],
   "notes": [
+    {
+      "version": "2.9.3",
+      "date": "2026-11-03",
+      "title": "Telefon tarayıcısında açılır pencereler",
+      "title_en": "Pop-up windows in phone browsers",
+      "items": [
+        {
+          "title": "Kabul et düğmesi ekranın dışında kalmıyor",
+          "text": "Telefon tarayıcısında (adres çubuğu açıkken) Kullanım Koşulları penceresinin altındaki onay kutuları ve Kabul ediyorum düğmesi ekranın dışında kalıyor, kaydırınca da çıkmıyordu. Pencereler artık görünen ekrana sığar; metin kendi içinde kayar, düğmeler her zaman altta görünür.",
+          "title_en": "The accept button no longer falls off the screen",
+          "text_en": "In phone browsers (with the address bar showing) the checkboxes and the I accept button at the bottom of the Terms window fell off the screen and couldn't be scrolled to. Windows now fit the visible screen; the text scrolls inside and the buttons always stay visible at the bottom.",
+          "admin": false
+        }
+      ]
+    },
     {
       "version": "2.9.2",
       "date": "2026-11-03",
@@ -155,47 +170,18 @@
           "admin": true
         }
       ]
-    },
-    {
-      "version": "2.8.13",
-      "date": "2026-11-02",
-      "title": "Doğru kapanış kayıtları, işlem başı zarar sınırı, Beni hatırla",
-      "title_en": "Correct close records, per-trade loss cap, Remember me",
-      "items": [
-        {
-          "title": "Kısmi kapanışlı işlemlerin kâr/zararı",
-          "text": "Kısmi kâr alınmış ya da elle azaltılmış bir pozisyon borsada stop olunca önceki kısmi satışlar kapanışa tekrar ekleniyordu: kâr/zarar ve komisyon iki kez sayılıyor, stop çıkışları “Kalkan” görünüyordu. Düzeltildi; eski kayıtlar da güncellendi. Borsadaki bakiyeniz bundan etkilenmemişti, yalnızca bottaki istatistikler yanlıştı.",
-          "title_en": "P/L of trades with partial closes",
-          "text_en": "When a position with a partial take-profit or a manual reduce hit its stop on the exchange, the earlier partial sells were added to the close again: P/L and fees were counted twice and stop exits showed as “Shield”. Fixed, and old records were corrected. Your exchange balance was never affected; only the bot's statistics were wrong.",
-          "admin": false
-        },
-        {
-          "title": "Tek işlemde en fazla zarar",
-          "text": "Stop olunca bir işlemde en fazla kaç USDT kaybedileceğini belirleyin; Dalga ve Radar dahil. Pozisyon baştan küçük açılır, stop yeri değişmez. Stopu ya da pozisyonu her seferinde elle küçültmenize gerek kalmaz.",
-          "title_en": "Max loss per trade",
-          "text_en": "Set the most USDT one trade can lose when its stop hits, Wave and Radar included. The position opens smaller from the start and the stop stays where it is. No need to shrink the stop or the position by hand every time.",
-          "admin": true
-        },
-        {
-          "title": "Beni hatırla ve Şifremi unuttum",
-          "text": "Giriş ekranında “Beni hatırla” seçilirse bu cihazda 30 gün oturum açık kalır ve kullanıcı adı hatırlanır. Parolanızı unutursanız Telegram'a bağlı hesaba 6 haneli kod gönderilir ve yeni parola belirlenir.",
-          "title_en": "Remember me and Forgot password",
-          "text_en": "If you tick “Remember me” on the sign-in screen, you stay signed in on that device for 30 days and the username is remembered. If you forget your password, a 6-digit code is sent to the account's linked Telegram and you can set a new one.",
-          "admin": false
-        }
-      ]
     }
   ],
   "windows": {
-    "version": "2.9.2",
-    "url": "https://github.com/syhnist/rositradebot/releases/download/v2.9.2/RosiTradeBot-Setup-2.9.2.exe",
-    "sha256": "36991608dca4ac5c24af698bf19a9f4b633c8082d0090cc752dca2b2aad0c78c",
+    "version": "2.9.3",
+    "url": "https://github.com/syhnist/rositradebot/releases/download/v2.9.3/RosiTradeBot-Setup-2.9.3.exe",
+    "sha256": "eb3cd37a5391e13d475c46652c431c5ecb3ea0890184f28b3568c712475149ae",
     "page": "https://syhnist.github.io/rositradebot/#windows"
   },
   "linux": {
-    "version": "2.9.2",
-    "url": "https://github.com/syhnist/rositradebot/releases/download/v2.9.2/RosiTradeBot-linux-2.9.2.tar.gz",
-    "sha256": "004f83e7954c857318215a311dedeb7bb050ec50c5688bd2886f04e7f8149b3b",
+    "version": "2.9.3",
+    "url": "https://github.com/syhnist/rositradebot/releases/download/v2.9.3/RosiTradeBot-linux-2.9.3.tar.gz",
+    "sha256": "1f45dbf31d92a8f7dfbf21eb8aa6f222e67418857fed410b3153c3fadabb7fbc",
     "page": "https://syhnist.github.io/rositradebot/#linux"
   },
   "android": {
