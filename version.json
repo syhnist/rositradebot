@@ -1,9 +1,38 @@
 {
-  "version": "2.9.0",
+  "version": "2.9.1",
   "date": "2026-11-03",
-  "releases": "https://github.com/syhnist/rositradebot/releases/tag/v2.9.0",
+  "releases": "https://github.com/syhnist/rositradebot/releases/tag/v2.9.1",
   "revoked": [],
   "notes": [
+    {
+      "version": "2.9.1",
+      "date": "2026-11-03",
+      "title": "Cüzdan sayfası, yeni profil ve daha az gereksiz bildirim",
+      "title_en": "Wallet page, new profile and fewer unnecessary notifications",
+      "items": [
+        {
+          "title": "Cüzdan sayfası",
+          "text": "Binance'teki gibi: toplam varlık, bot cüzdanı ve ayrılmamış bakiye kartları, Aktar düğmesi (Binance hesabı ⇄ bot cüzdanı, yön değiştirme, Tümü) ve aktarım geçmişi. Para Binance'te kalır; aktarım botun ne kadarını kullanacağını belirler. Açık pozisyon teminatı çekilemez.",
+          "title_en": "Wallet page",
+          "text_en": "Like Binance: total equity, bot wallet and unallocated balance cards, a Transfer button (Binance account ⇄ bot wallet, swap direction, Max) and transfer history. The money stays on Binance; a transfer sets how much the bot uses. Margin of open positions can't be withdrawn.",
+          "admin": false
+        },
+        {
+          "title": "Profil",
+          "text": "Profil resmi ekleyebilirsiniz. Sayfa sekmelere ayrıldı: genel bakış (güvenlik puanı ve kontrol listesi, giriş istatistikleri), güvenlik, oturumlar ve girişler, son işlemleriniz.",
+          "title_en": "Profile",
+          "text_en": "You can add a profile picture. The page is split into tabs: overview (security score and checklist, sign-in stats), security, sessions and sign-ins, and your recent actions.",
+          "admin": false
+        },
+        {
+          "title": "Açılmayan işlemler için bildirim yok",
+          "text": "Risk kurallarının reddettiği ya da bot duraklatılmışken atlanan sinyaller artık Telegram'a ve telefona bildirim göndermez; yalnızca açılan işlemler bildirilir. Reddedilenler panelde Sinyaller sayfasında görünmeye devam eder.",
+          "title_en": "No notifications for trades that weren't opened",
+          "text_en": "Signals rejected by risk rules or skipped while the bot is paused no longer notify Telegram or the phone; only opened trades are notified. Rejected ones still appear on the Signals page.",
+          "admin": false
+        }
+      ]
+    },
     {
       "version": "2.9.0",
       "date": "2026-11-03",
@@ -120,33 +149,18 @@
           "admin": false
         }
       ]
-    },
-    {
-      "version": "2.8.11",
-      "date": "2026-11-01",
-      "title": "Tüm işlemler kademeli",
-      "title_en": "All trades use the ladder",
-      "items": [
-        {
-          "title": "Radar ve Dalga işlemleri de kademeli",
-          "text": "Nereden açılırsa açılsın tüm işlemler aynı yönetilir: kademeli SL/TP, kısmi kâr ve Çevrimdışı Kalkan. Açık Radar ve Dalga pozisyonları da kademeye geçer.",
-          "title_en": "Radar and Wave trades use the ladder too",
-          "text_en": "Wherever a trade opens from, it is managed the same way: laddered SL/TP, partial profit and Offline Shield. Open Radar and Wave positions move to the ladder too.",
-          "admin": false
-        }
-      ]
     }
   ],
   "windows": {
-    "version": "2.9.0",
-    "url": "https://github.com/syhnist/rositradebot/releases/download/v2.9.0/RosiTradeBot-Setup-2.9.0.exe",
-    "sha256": "1820abddbb0b74fe53c1895327acc2ff6d4c5765bbb77d5ac8d62dda954482bc",
+    "version": "2.9.1",
+    "url": "https://github.com/syhnist/rositradebot/releases/download/v2.9.1/RosiTradeBot-Setup-2.9.1.exe",
+    "sha256": "d684b9e1264bf8c5645536405cb8a25699878da43121cd8fb1a4bc538d6a17dd",
     "page": "https://syhnist.github.io/rositradebot/#windows"
   },
   "linux": {
-    "version": "2.9.0",
-    "url": "https://github.com/syhnist/rositradebot/releases/download/v2.9.0/RosiTradeBot-linux-2.9.0.tar.gz",
-    "sha256": "0761d81261812d7b161b371a323a9fa77dda2d2c466075a6779c98791f5c2397",
+    "version": "2.9.1",
+    "url": "https://github.com/syhnist/rositradebot/releases/download/v2.9.1/RosiTradeBot-linux-2.9.1.tar.gz",
+    "sha256": "fb3114b6a7b79f69c799f9d712c4bc7f7102438169202b0bd4de8157dd13255b",
     "page": "https://syhnist.github.io/rositradebot/#linux"
   },
   "android": {
