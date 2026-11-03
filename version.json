@@ -1,9 +1,52 @@
 {
-  "version": "2.8.15",
-  "date": "2026-11-02",
-  "releases": "https://github.com/syhnist/rositradebot/releases/tag/v2.8.15",
+  "version": "2.9.0",
+  "date": "2026-11-03",
+  "releases": "https://github.com/syhnist/rositradebot/releases/tag/v2.9.0",
   "revoked": [],
   "notes": [
+    {
+      "version": "2.9.0",
+      "date": "2026-11-03",
+      "title": "Arkadaş botları, Syhnist Admin Paketi, cüzdan ve limit emirle giriş",
+      "title_en": "Friend bots, Syhnist Admin Package, wallet and limit-order entry",
+      "items": [
+        {
+          "title": "Cüzdan",
+          "text": "Hesabın tamamı yerine bir kısmını bota ayırın: ör. demo hesapta 5.000 USDT varken 1.000. Risk, işlem büyüklüğü ve günlük sınırlar bu tutara göre hesaplanır; kâr ve zarar cüzdana eklenir.",
+          "title_en": "Wallet",
+          "text_en": "Give the bot only part of the account: e.g. 1,000 of 5,000 USDT in the demo account. Risk, trade size and daily limits are based on that amount; profit and loss are added to the wallet.",
+          "admin": true
+        },
+        {
+          "title": "Syhnist Admin Paketi",
+          "text": "Geliştiricinin kendi botunda kullandığı ayarların tamamı tek pakette. Her paket kartında artık içerik (zaman dilimi, risk, pozisyon sayısı, stop, giriş türü…) ve geçmiş test sonucu yazıyor; istediğinizi seçip uygularsınız.",
+          "title_en": "Syhnist Admin Package",
+          "text_en": "All the settings the developer uses on their own bot, in one package. Every package card now lists its contents (timeframe, risk, positions, stop, entry type…) and past test result; pick one and apply it.",
+          "admin": true
+        },
+        {
+          "title": "Limit emirle giriş ve Sabırlı Swing Limit",
+          "text": "Giriş emri sinyal fiyatının biraz gerisine konur: dolarsa ücret düşer ve kayma olmaz; süresinde dolmazsa piyasa emriyle girilir. Sabırlı Swing'de 365 günlük testte getiri +%46'dan +%57'ye çıktı, iki yarıyılda da iyileşti. Bu ayarla gelen Sabırlı Swing Limit testlerde en iyi paket.",
+          "title_en": "Limit-order entry and Patient Swing Limit",
+          "text_en": "The entry order goes slightly behind the signal price: if it fills, fees drop and there's no slippage; if it doesn't fill in time, it enters at market. On Patient Swing the 365-day test return rose from +46% to +57% and both halves improved. Patient Swing Limit, which uses it, is the best package in tests.",
+          "admin": true
+        },
+        {
+          "title": "Arkadaş botları",
+          "text": "Sunucu sahibi aynı sunucuda arkadaşları için ayrı botlar açabilir (sudo rosi guest add <ad>). Her arkadaşın kendi adresi, parolası, Binance Demo hesabı ve ayarları olur; Android uygulamasından ya da tarayıcıdan girer. Güncellemeler tüm botlara birlikte gider.",
+          "title_en": "Friend bots",
+          "text_en": "The server owner can open separate bots for friends on the same server (sudo rosi guest add <name>). Each friend has their own address, password, Binance Demo account and settings, and signs in from the Android app or a browser. Updates go to all bots together.",
+          "admin": true
+        },
+        {
+          "title": "Kurulum adımları, sade menü ve yeni rehber",
+          "text": "Ana Ekran'daki kart ilk işleme kadar ne kaldığını gösterir ve ilgili ayara götürür. Misafir botlarda menü sade başlar (Tüm menüyü göster ile açılır). Rehbere arkadaş botu bölümü ve sık sorulan sorular eklendi.",
+          "title_en": "Setup steps, simple menu and a new guide",
+          "text_en": "A Home screen card shows what's left until the first trade and takes you to each setting. Guest bots start with a simple menu (open it all with Show full menu). The Guide has a friend-bot section and FAQ.",
+          "admin": false
+        }
+      ]
+    },
     {
       "version": "2.8.15",
       "date": "2026-11-02",
@@ -92,33 +135,18 @@
           "admin": false
         }
       ]
-    },
-    {
-      "version": "2.8.10",
-      "date": "2026-11-01",
-      "title": "Radar'a ayrı teminat",
-      "title_en": "Separate margin for Radar",
-      "items": [
-        {
-          "title": "Radar teminatı ve kaldıracı ayrıldı",
-          "text": "Hareket Radarı'nın teminat ve kaldıraç ayarı artık kendi sekmesinde. Dalga Avcısı ayarları Radar'ı, Radar ayarları Dalga Avcısı'nı etkilemez.",
-          "title_en": "Radar margin and leverage are separate",
-          "text_en": "Move Radar's margin and leverage now live in its own tab. Wave Hunter settings don't affect Radar, and Radar settings don't affect Wave Hunter.",
-          "admin": false
-        }
-      ]
     }
   ],
   "windows": {
-    "version": "2.8.15",
-    "url": "https://github.com/syhnist/rositradebot/releases/download/v2.8.15/RosiTradeBot-Setup-2.8.15.exe",
-    "sha256": "fbe8df25cd32bacb68a467a09c313da60cc95ab518edb700447811696bb70c79",
+    "version": "2.9.0",
+    "url": "https://github.com/syhnist/rositradebot/releases/download/v2.9.0/RosiTradeBot-Setup-2.9.0.exe",
+    "sha256": "1820abddbb0b74fe53c1895327acc2ff6d4c5765bbb77d5ac8d62dda954482bc",
     "page": "https://syhnist.github.io/rositradebot/#windows"
   },
   "linux": {
-    "version": "2.8.15",
-    "url": "https://github.com/syhnist/rositradebot/releases/download/v2.8.15/RosiTradeBot-linux-2.8.15.tar.gz",
-    "sha256": "12c631169049352d54a0b1c456c4d2e815e791e9370d77ce6c9e1939fec6bb50",
+    "version": "2.9.0",
+    "url": "https://github.com/syhnist/rositradebot/releases/download/v2.9.0/RosiTradeBot-linux-2.9.0.tar.gz",
+    "sha256": "0761d81261812d7b161b371a323a9fa77dda2d2c466075a6779c98791f5c2397",
     "page": "https://syhnist.github.io/rositradebot/#linux"
   },
   "android": {
