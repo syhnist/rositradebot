@@ -1,9 +1,38 @@
 {
-  "version": "2.9.5",
-  "date": "2026-11-03",
-  "releases": "https://github.com/syhnist/rositradebot/releases/tag/v2.9.5",
+  "version": "2.9.6",
+  "date": "2026-11-06",
+  "releases": "https://github.com/syhnist/rositradebot/releases/tag/v2.9.6",
   "revoked": [],
   "notes": [
+    {
+      "version": "2.9.6",
+      "date": "2026-11-06",
+      "title": "Dalga Avcısı kendi hatasından öğreniyor",
+      "title_en": "Wave Hunter learns from its own mistakes",
+      "items": [
+        {
+          "title": "Kaybeden kural kendini durdurur",
+          "text": "Dalga Avcısı her kuralın son 60 sinyalinin gerçek sonucunu izler. Bir kural açıkça zarardaysa (ortalama R, ölçüm payıyla birlikte eksi) o kuraldan onaysız işlem açılmaz, sinyaller senin onayını bekler; karne düzelince kendiliğinden geri döner. Canlı kayıtta Erken yükseliş sinyalleri 143 sinyalde ortalama -0,44R verdi. Ayar: Dalga Avcısı → Öğrenme zayıf sinyali atlasın.",
+          "title_en": "A losing rule stops itself",
+          "text_en": "Wave Hunter tracks the real outcome of each rule's last 60 signals. If a rule is clearly losing (average R negative even with its margin of error), it stops opening trades without approval and signals wait for you; it resumes on its own once the record recovers. In live data, Early rise signals averaged -0.44R over 143 signals. Setting: Wave Hunter → Learning skips weak signals.",
+          "admin": false
+        },
+        {
+          "title": "Hisse vadelileri izlenmiyor",
+          "text": "Binance'e eklenen hisse senedi vadelileri (INTC, AMZN, SQQQ gibi) Dalga Avcısı'nın canlı takibine giriyor, işlem açmaya çalışıp \"Borsada bulunamadı\" ya da sözleşme hatası veriyordu. Artık yalnızca kripto vadelileri izlenir.",
+          "title_en": "Stock perpetuals are no longer watched",
+          "text_en": "Stock perpetuals added to Binance (such as INTC, AMZN, SQQQ) were entering Wave Hunter's live tracking and failing with \"not found on exchange\" or agreement errors. Now only crypto perpetuals are watched.",
+          "admin": false
+        },
+        {
+          "title": "Risk komisyonu da sayar",
+          "text": "Pozisyon boyutu artık stop olunca ödenecek komisyon ve kaymayı da hesaba katar. Canlı stoplar planlanan riskin ortalama 1,07 katı kaybettiriyordu; %1 risk artık gerçekten yaklaşık %1 kayıp demek. Pozisyonlar bu yüzden biraz (çoğunlukla %3–8) küçülür.",
+          "title_en": "Risk includes fees",
+          "text_en": "Position size now also accounts for the fees and slippage paid when a stop is hit. Live stops were losing 1.07× the planned risk on average; 1% risk now really means about a 1% loss. Positions are therefore slightly smaller (mostly 3–8%).",
+          "admin": false
+        }
+      ]
+    },
     {
       "version": "2.9.5",
       "date": "2026-11-03",
@@ -134,61 +163,18 @@
           "admin": false
         }
       ]
-    },
-    {
-      "version": "2.9.0",
-      "date": "2026-11-03",
-      "title": "Arkadaş botları, Syhnist Admin Paketi, cüzdan ve limit emirle giriş",
-      "title_en": "Friend bots, Syhnist Admin Package, wallet and limit-order entry",
-      "items": [
-        {
-          "title": "Cüzdan",
-          "text": "Hesabın tamamı yerine bir kısmını bota ayırın: ör. demo hesapta 5.000 USDT varken 1.000. Risk, işlem büyüklüğü ve günlük sınırlar bu tutara göre hesaplanır; kâr ve zarar cüzdana eklenir.",
-          "title_en": "Wallet",
-          "text_en": "Give the bot only part of the account: e.g. 1,000 of 5,000 USDT in the demo account. Risk, trade size and daily limits are based on that amount; profit and loss are added to the wallet.",
-          "admin": true
-        },
-        {
-          "title": "Syhnist Admin Paketi",
-          "text": "Geliştiricinin kendi botunda kullandığı ayarların tamamı tek pakette. Her paket kartında artık içerik (zaman dilimi, risk, pozisyon sayısı, stop, giriş türü…) ve geçmiş test sonucu yazıyor; istediğinizi seçip uygularsınız.",
-          "title_en": "Syhnist Admin Package",
-          "text_en": "All the settings the developer uses on their own bot, in one package. Every package card now lists its contents (timeframe, risk, positions, stop, entry type…) and past test result; pick one and apply it.",
-          "admin": true
-        },
-        {
-          "title": "Limit emirle giriş ve Sabırlı Swing Limit",
-          "text": "Giriş emri sinyal fiyatının biraz gerisine konur: dolarsa ücret düşer ve kayma olmaz; süresinde dolmazsa piyasa emriyle girilir. Sabırlı Swing'de 365 günlük testte getiri +%46'dan +%57'ye çıktı, iki yarıyılda da iyileşti. Bu ayarla gelen Sabırlı Swing Limit testlerde en iyi paket.",
-          "title_en": "Limit-order entry and Patient Swing Limit",
-          "text_en": "The entry order goes slightly behind the signal price: if it fills, fees drop and there's no slippage; if it doesn't fill in time, it enters at market. On Patient Swing the 365-day test return rose from +46% to +57% and both halves improved. Patient Swing Limit, which uses it, is the best package in tests.",
-          "admin": true
-        },
-        {
-          "title": "Arkadaş botları",
-          "text": "Sunucu sahibi aynı sunucuda arkadaşları için ayrı botlar açabilir (sudo rosi guest add <ad>). Her arkadaşın kendi adresi, parolası, Binance Demo hesabı ve ayarları olur; Android uygulamasından ya da tarayıcıdan girer. Güncellemeler tüm botlara birlikte gider.",
-          "title_en": "Friend bots",
-          "text_en": "The server owner can open separate bots for friends on the same server (sudo rosi guest add <name>). Each friend has their own address, password, Binance Demo account and settings, and signs in from the Android app or a browser. Updates go to all bots together.",
-          "admin": true
-        },
-        {
-          "title": "Kurulum adımları, sade menü ve yeni rehber",
-          "text": "Ana Ekran'daki kart ilk işleme kadar ne kaldığını gösterir ve ilgili ayara götürür. Misafir botlarda menü sade başlar (Tüm menüyü göster ile açılır). Rehbere arkadaş botu bölümü ve sık sorulan sorular eklendi.",
-          "title_en": "Setup steps, simple menu and a new guide",
-          "text_en": "A Home screen card shows what's left until the first trade and takes you to each setting. Guest bots start with a simple menu (open it all with Show full menu). The Guide has a friend-bot section and FAQ.",
-          "admin": false
-        }
-      ]
     }
   ],
   "windows": {
-    "version": "2.9.5",
-    "url": "https://github.com/syhnist/rositradebot/releases/download/v2.9.5/RosiTradeBot-Setup-2.9.5.exe",
-    "sha256": "9c763929ea9ab9ac491f3177c22ab55de4f1ec78cb40318e71fbc3951d7d4409",
+    "version": "2.9.6",
+    "url": "https://github.com/syhnist/rositradebot/releases/download/v2.9.6/RosiTradeBot-Setup-2.9.6.exe",
+    "sha256": "9b211316be604cbddc80e194ac1fccacdcfacd35445feb86384b0c85a89a1e6e",
     "page": "https://syhnist.github.io/rositradebot/#windows"
   },
   "linux": {
-    "version": "2.9.5",
-    "url": "https://github.com/syhnist/rositradebot/releases/download/v2.9.5/RosiTradeBot-linux-2.9.5.tar.gz",
-    "sha256": "cca432573bd312e71810574e6a2d1566ffc44bf9c4a83b3a75105f72dda69cd2",
+    "version": "2.9.6",
+    "url": "https://github.com/syhnist/rositradebot/releases/download/v2.9.6/RosiTradeBot-linux-2.9.6.tar.gz",
+    "sha256": "8029758d96550fd4c2055bde51e2b87bc9f738590840e861b5ab414cf6745197",
     "page": "https://syhnist.github.io/rositradebot/#linux"
   },
   "android": {
